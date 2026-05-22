@@ -3,1301 +3,973 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
   <meta name="description" content="Accountancy Group – Expert accountants in South Norwood helping businesses startup, grow and succeed since 1986.">
   <title>Accountancy Group | Expert Accountants in South Norwood</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-
-  <!-- Hotjar -->
-  <script>
-    (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2125893,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2125893,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --primary: #0A2540;
-      --primary-light: #1A3D6B;
-      --accent: #00A86B;
-      --accent-light: #00C17D;
-      --accent-muted: #E6F7F1;
-      --neutral-50: #F8F9FA;
-      --neutral-100: #F1F3F5;
-      --neutral-200: #E9ECEF;
-      --neutral-300: #DEE2E6;
-      --neutral-400: #CED4DA;
-      --neutral-500: #ADB5BD;
-      --neutral-600: #6C757D;
-      --neutral-700: #495057;
-      --neutral-800: #343A40;
-      --neutral-900: #212529;
+      --ink: #0D0D0D;
+      --ink-2: #1A1A1A;
+      --ink-3: #2E2E2E;
+      --muted: #6B6B6B;
+      --muted-2: #9A9A9A;
+      --border: #E8E8E8;
+      --border-2: #F0F0F0;
+      --surface: #F7F6F3;
+      --surface-2: #EFEDE8;
       --white: #FFFFFF;
-      --error: #DC3545;
-      --warning: #FD7E14;
-      --success: #28A745;
-      --font-body: 'Inter', sans-serif;
-      --font-display: 'DM Serif Display', serif;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
-      --shadow-xl: 0 24px 64px rgba(0,0,0,0.16);
-      --radius-sm: 6px;
-      --radius-md: 12px;
-      --radius-lg: 20px;
-      --radius-xl: 32px;
+      --green: #1A7A4A;
+      --green-light: #22A060;
+      --green-pale: #EBF5EF;
+      --green-pale-2: #D4EDE0;
+      --amber: #C47B2B;
+      --amber-pale: #FDF3E7;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'Syne', sans-serif;
+      --body: 'Inter', sans-serif;
+      --r-xs: 4px;
+      --r-sm: 8px;
+      --r-md: 14px;
+      --r-lg: 20px;
+      --r-xl: 28px;
+      --r-full: 999px;
     }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--body); color: var(--ink); background: var(--white); -webkit-font-smoothing: antialiased; line-height: 1; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
 
-    html { scroll-behavior: smooth; }
+    /* ── LAYOUT ── */
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+    .wrap-lg { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
 
-    body {
-      font-family: var(--font-body);
-      color: var(--neutral-900);
-      background: var(--white);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--ink);
+      padding: 10px 0;
+      font-family: var(--body);
+      font-size: 12px;
+      letter-spacing: 0.02em;
     }
-
-    /* ─── UTILITY ─── */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .container-wide {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      border-radius: 50px;
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      white-space: nowrap;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: var(--white);
-    }
-    .btn-primary:hover {
-      background: var(--accent-light);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0,168,107,0.35);
-    }
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 1.5px solid rgba(255,255,255,0.4);
-    }
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.12);
-      border-color: rgba(255,255,255,0.7);
-    }
-    .btn-dark {
-      background: var(--primary);
-      color: var(--white);
-    }
-    .btn-dark:hover {
-      background: var(--primary-light);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(10,37,64,0.3);
-    }
-    .btn-ghost {
-      background: transparent;
-      color: var(--primary);
-      border: 1.5px solid var(--neutral-300);
-    }
-    .btn-ghost:hover {
-      border-color: var(--primary);
-      background: var(--neutral-50);
-    }
-    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
-    .badge {
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .badge-accent { background: var(--accent-muted); color: var(--accent); }
-    .badge-light { background: rgba(255,255,255,0.15); color: var(--white); }
-
-    /* ─── ANNOUNCEMENT BAR ─── */
-    .announcement-bar {
-      background: var(--primary);
-      color: rgba(255,255,255,0.85);
-      font-size: 0.8rem;
-      padding: 8px 0;
-      text-align: center;
-    }
-    .announcement-bar a { color: var(--accent-light); text-decoration: none; font-weight: 600; }
-    .announcement-bar a:hover { text-decoration: underline; }
-    .announcement-bar .bar-inner {
+    .topbar-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
     }
-    .bar-contact { display: flex; align-items: center; gap: 20px; }
-    .bar-contact a { color: rgba(255,255,255,0.85); text-decoration: none; }
-    .bar-contact a:hover { color: var(--white); }
+    .topbar-left { color: rgba(255,255,255,0.5); }
+    .topbar-left strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+    .topbar-right { display: flex; gap: 24px; }
+    .topbar-right a {
+      color: rgba(255,255,255,0.6);
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .topbar-right a:hover { color: var(--white); }
+    .topbar-right svg { width: 13px; height: 13px; opacity: 0.7; }
 
-    /* ─── NAVBAR ─── */
-    .navbar {
+    /* ── NAV ── */
+    .nav {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      background: var(--white);
-      border-bottom: 1px solid var(--neutral-200);
-      transition: box-shadow 0.3s ease;
+      z-index: 500;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
     }
-    .navbar.scrolled { box-shadow: var(--shadow-md); }
-    .navbar-inner {
+    .nav-inner {
+      height: 68px;
       display: flex;
       align-items: center;
-      height: 72px;
-      gap: 40px;
+      gap: 0;
     }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      flex-shrink: 0;
-    }
-    .nav-logo img { height: 44px; width: auto; }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      list-style: none;
-      flex: 1;
-    }
-    .nav-links > li { position: relative; }
-    .nav-links > li > a {
-      display: flex;
-      align-items: center;
-      gap: 4px;
+    .nav-logo { display: flex; align-items: center; margin-right: auto; }
+    .nav-logo img { height: 40px; }
+    .nav-menu { display: flex; align-items: center; gap: 2px; list-style: none; margin-right: 32px; }
+    .nav-menu > li { position: relative; }
+    .nav-menu > li > a {
+      display: flex; align-items: center; gap: 4px;
       padding: 8px 14px;
-      color: var(--neutral-700);
-      text-decoration: none;
-      font-size: 0.88rem;
+      font-family: var(--sans);
+      font-size: 13px;
       font-weight: 500;
-      border-radius: var(--radius-sm);
-      transition: all 0.2s ease;
+      color: var(--muted);
+      border-radius: var(--r-sm);
+      transition: all 0.18s;
     }
-    .nav-links > li > a:hover, .nav-links > li > a.active {
-      color: var(--primary);
-      background: var(--neutral-50);
-    }
-    .nav-links > li > a svg { width: 14px; height: 14px; transition: transform 0.2s ease; }
-    .nav-links > li:hover > a svg { transform: rotate(180deg); }
-
-    /* Dropdown */
+    .nav-menu > li > a:hover, .nav-menu > li > a.current { color: var(--ink); }
+    .nav-menu > li > a svg { width: 12px; height: 12px; transition: transform 0.2s; }
+    .nav-menu > li:hover > a svg { transform: rotate(180deg); }
     .nav-dropdown {
-      position: absolute;
-      top: calc(100% + 8px);
-      left: 0;
+      position: absolute; top: calc(100% + 10px); left: 0;
       background: var(--white);
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-lg);
-      min-width: 220px;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      min-width: 210px;
       padding: 8px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-8px);
-      transition: all 0.2s ease;
       list-style: none;
+      opacity: 0; visibility: hidden;
+      transform: translateY(-6px);
+      transition: all 0.2s;
     }
-    .nav-links > li:hover .nav-dropdown {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
+    .nav-menu > li:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
     .nav-dropdown li a {
       display: block;
-      padding: 10px 14px;
-      color: var(--neutral-700);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      border-radius: var(--radius-sm);
-      transition: all 0.15s ease;
+      padding: 9px 14px;
+      font-family: var(--body);
+      font-size: 13.5px;
+      font-weight: 400;
+      color: var(--ink-3);
+      border-radius: var(--r-sm);
+      transition: background 0.15s;
     }
-    .nav-dropdown li a:hover {
-      color: var(--primary);
-      background: var(--neutral-50);
-    }
-    .nav-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
-    .nav-phone {
-      font-size: 0.85rem;
+    .nav-dropdown li a:hover { background: var(--surface); color: var(--ink); }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px;
+      background: var(--ink);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 13px;
       font-weight: 600;
-      color: var(--primary);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      border-radius: var(--r-full);
+      transition: background 0.2s, transform 0.2s;
     }
-    .nav-phone svg { color: var(--accent); }
-    .nav-phone:hover { color: var(--accent); }
+    .nav-cta:hover { background: var(--ink-3); transform: translateY(-1px); }
+    .nav-cta svg { width: 15px; height: 15px; }
+    .hamburger { display: none; padding: 6px; color: var(--ink); }
+    .hamburger svg { width: 22px; height: 22px; }
 
-    /* Mobile toggle */
-    .nav-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      color: var(--primary);
-      margin-left: auto;
-    }
-    .nav-toggle svg { width: 24px; height: 24px; }
-
-    /* ─── HERO ─── */
+    /* ── HERO ── */
     .hero {
-      background: var(--primary);
-      position: relative;
+      background: var(--surface);
+      padding: 88px 0 0;
       overflow: hidden;
-      padding: 100px 0 80px;
-      min-height: 600px;
-      display: flex;
-      align-items: center;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('assets/images/hero-image-3.jpg') center/cover no-repeat;
-      opacity: 0.12;
-    }
-    .hero-grid-overlay {
-      position: absolute;
-      inset: 0;
-      background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none;
-    }
-    .hero-glow {
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,168,107,0.18) 0%, transparent 70%);
-      right: -100px;
-      top: -100px;
-      pointer-events: none;
-    }
-    .hero-content {
       position: relative;
-      z-index: 2;
-      max-width: 620px;
     }
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 14px;
-      background: rgba(0,168,107,0.15);
-      border: 1px solid rgba(0,168,107,0.3);
-      border-radius: 50px;
-      color: #4ECCA3;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+    .hero-top { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; padding-bottom: 72px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
+      color: var(--green);
       margin-bottom: 28px;
     }
-    .hero-tag::before {
+    .hero-eyebrow::before {
       content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent-light);
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.4); }
+      width: 20px; height: 1.5px;
+      background: var(--green);
     }
     .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.4rem, 5vw, 3.8rem);
-      line-height: 1.15;
-      color: var(--white);
-      margin-bottom: 20px;
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5.5vw, 5rem);
+      line-height: 1.08;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
     }
     .hero h1 em {
       font-style: italic;
-      color: #4ECCA3;
+      color: var(--green);
     }
-    .hero p {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.72);
-      line-height: 1.7;
-      margin-bottom: 36px;
-      max-width: 520px;
+    .hero-sub {
+      font-family: var(--body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--muted);
+      margin-bottom: 44px;
+      max-width: 440px;
     }
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-    }
-    .hero-stats {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      padding-top: 36px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-    .hero-stat {}
-    .hero-stat-value {
-      font-size: 1.8rem;
-      font-weight: 800;
+    .hero-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .btn-ink {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: var(--ink);
       color: var(--white);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .hero-stat-label {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.55);
-      font-weight: 500;
-    }
-    .hero-stat-divider {
-      width: 1px;
-      height: 40px;
-      background: rgba(255,255,255,0.12);
-    }
-    .hero-visual {
-      position: relative;
-      flex-shrink: 0;
-    }
-    .hero-card {
-      background: rgba(255,255,255,0.07);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      width: 340px;
-    }
-    .hero-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .hero-card-title { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-weight: 500; }
-    .hero-card-badge {
-      background: rgba(0,168,107,0.2);
-      color: #4ECCA3;
-      padding: 4px 10px;
-      border-radius: 50px;
-      font-size: 0.72rem;
+      font-family: var(--sans);
+      font-size: 14px;
       font-weight: 600;
+      border-radius: var(--r-full);
+      transition: all 0.22s;
+      border: 1.5px solid var(--ink);
     }
-    .hero-card-metric {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .hero-card-sub { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; }
-    .hero-card-services { display: flex; flex-direction: column; gap: 10px; }
-    .hero-card-service {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
-      background: rgba(255,255,255,0.06);
-      border-radius: var(--radius-sm);
-    }
-    .hcs-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      background: rgba(0,168,107,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .hcs-icon svg { width: 14px; height: 14px; color: #4ECCA3; }
-    .hcs-label { font-size: 0.82rem; color: rgba(255,255,255,0.8); font-weight: 500; }
-    .hcs-check { margin-left: auto; color: #4ECCA3; }
-    .hcs-check svg { width: 14px; height: 14px; }
-
-    .hero-floating-badge {
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      background: var(--white);
-      border-radius: var(--radius-md);
-      padding: 14px 18px;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .hfb-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--accent-muted);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .hfb-icon svg { width: 20px; height: 20px; color: var(--accent); }
-    .hfb-value { font-size: 1.1rem; font-weight: 800; color: var(--primary); line-height: 1; }
-    .hfb-label { font-size: 0.72rem; color: var(--neutral-500); }
-
-    /* ─── TRUST BAR ─── */
-    .trust-bar {
-      background: var(--neutral-50);
-      border-bottom: 1px solid var(--neutral-200);
-      padding: 20px 0;
-    }
-    .trust-bar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 48px;
-      flex-wrap: wrap;
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--neutral-600);
-      font-size: 0.85rem;
-      font-weight: 500;
-    }
-    .trust-item svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
-    .trust-divider { width: 1px; height: 20px; background: var(--neutral-300); }
-
-    /* ─── SECTION SHARED ─── */
-    .section { padding: 96px 0; }
-    .section-sm { padding: 64px 0; }
-    .section-alt { background: var(--neutral-50); }
-    .section-dark { background: var(--primary); }
-    .section-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
-    .section-header .badge { margin-bottom: 16px; }
-    .section-header h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
-      line-height: 1.2;
-      color: var(--primary);
-      margin-bottom: 16px;
-    }
-    .section-header p {
-      font-size: 1.05rem;
-      color: var(--neutral-600);
-      line-height: 1.7;
-    }
-    .section-dark .section-header h2 { color: var(--white); }
-    .section-dark .section-header p { color: rgba(255,255,255,0.65); }
-
-    /* ─── SERVICES ─── */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      position: relative;
-      overflow: hidden;
-    }
-    .service-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--accent);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease;
-    }
-    .service-card:hover {
-      border-color: transparent;
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-    }
-    .service-card:hover::after { transform: scaleX(1); }
-    .service-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--accent-muted);
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .service-icon svg { width: 26px; height: 26px; color: var(--accent); }
-    .service-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--primary);
-      line-height: 1.3;
-    }
-    .service-card p {
-      font-size: 0.875rem;
-      color: var(--neutral-600);
-      line-height: 1.6;
-      flex: 1;
-    }
-    .service-link {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.82rem;
+    .btn-ink:hover { background: transparent; color: var(--ink); transform: translateY(-2px); }
+    .btn-ink svg { width: 16px; height: 16px; }
+    .btn-outline-ink {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 14px;
       font-weight: 600;
-      color: var(--accent);
+      border-radius: var(--r-full);
+      border: 1.5px solid var(--border);
+      transition: all 0.22s;
     }
-    .service-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
-    .service-card:hover .service-link svg { transform: translateX(3px); }
-
-    /* ─── INDUSTRIES ─── */
-    .industries-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-    .industry-card {
-      position: relative;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      aspect-ratio: 4/3;
-      text-decoration: none;
-      display: block;
-    }
-    .industry-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    .industry-card:hover img { transform: scale(1.06); }
-    .industry-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(10,37,64,0.88) 0%, rgba(10,37,64,0.2) 60%, transparent 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 20px;
-    }
-    .industry-card h3 {
+    .btn-outline-ink:hover { border-color: var(--ink); transform: translateY(-2px); }
+    .btn-green {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: var(--green);
       color: var(--white);
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 3px;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: var(--r-full);
+      border: 1.5px solid var(--green);
+      transition: all 0.22s;
     }
-    .industry-card span {
-      color: rgba(255,255,255,0.65);
-      font-size: 0.78rem;
-    }
-    .industry-card-wide {
-      grid-column: span 2;
-      aspect-ratio: 16/7;
-    }
+    .btn-green:hover { background: var(--green-light); border-color: var(--green-light); transform: translateY(-2px); }
+    .btn-green svg { width: 16px; height: 16px; }
 
-    /* ─── WHY US ─── */
-    .why-us-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-    .why-us-visual { position: relative; }
-    .why-us-img {
-      width: 100%;
-      border-radius: var(--radius-xl);
-      object-fit: cover;
+    /* Hero right side */
+    .hero-right { position: relative; }
+    .hero-img-wrap {
+      position: relative;
+      border-radius: var(--r-xl) var(--r-xl) 0 0;
+      overflow: hidden;
       height: 480px;
     }
-    .why-us-stats-card {
-      position: absolute;
-      bottom: -32px;
-      right: -32px;
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      box-shadow: var(--shadow-xl);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      width: 260px;
+    .hero-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
     }
-    .mini-stat {}
-    .mini-stat-value {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-    }
-    .mini-stat-value span { color: var(--accent); }
-    .mini-stat-label {
-      font-size: 0.72rem;
-      color: var(--neutral-500);
-      margin-top: 4px;
-      line-height: 1.3;
-    }
-    .why-us-content .badge { margin-bottom: 20px; }
-    .why-us-content h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.9rem, 3vw, 2.6rem);
-      color: var(--primary);
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    .why-us-content p {
-      font-size: 1rem;
-      color: var(--neutral-600);
-      line-height: 1.75;
-      margin-bottom: 36px;
-    }
-    .why-points { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
-    .why-point {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-    }
-    .wp-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: var(--accent-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .wp-icon svg { width: 18px; height: 18px; color: var(--accent); }
-    .wp-text h4 { font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 3px; }
-    .wp-text p { font-size: 0.85rem; color: var(--neutral-600); line-height: 1.5; }
-
-    /* ─── PROCESS ─── */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-      position: relative;
-    }
-    .process-grid::before {
+    .hero-img-wrap::after {
       content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, rgba(13,13,13,0.35) 100%);
+    }
+    .hero-badge {
       position: absolute;
-      top: 44px;
-      left: calc(16.66% + 32px);
-      right: calc(16.66% + 32px);
-      height: 1px;
-      background: linear-gradient(90deg, var(--accent) 0%, var(--neutral-300) 50%, var(--accent) 100%);
-      z-index: 0;
-    }
-    .process-step {
-      text-align: center;
-      padding: 0 32px;
-      position: relative;
-      z-index: 1;
-    }
-    .process-number {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
+      top: 28px; left: -24px;
       background: var(--white);
-      border: 2px solid var(--neutral-200);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--neutral-400);
-      position: relative;
-      transition: all 0.3s ease;
+      border-radius: var(--r-lg);
+      padding: 18px 20px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      display: flex; align-items: center; gap: 14px;
+      z-index: 2;
     }
-    .process-step:hover .process-number {
-      border-color: var(--accent);
-      color: var(--accent);
-      box-shadow: 0 0 0 8px var(--accent-muted);
-    }
-    .process-step.active .process-number {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--white);
-      box-shadow: 0 0 0 8px var(--accent-muted);
-    }
-    .process-step h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
-    .process-step p { font-size: 0.875rem; color: var(--neutral-600); line-height: 1.6; }
-
-    /* ─── TESTIMONIALS ─── */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .testimonial-card {
-      background: var(--white);
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      transition: all 0.3s ease;
-    }
-    .testimonial-card:hover {
-      border-color: transparent;
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-    }
-    .testimonial-stars {
-      display: flex;
-      gap: 3px;
-      margin-bottom: 18px;
-    }
-    .testimonial-stars svg { width: 16px; height: 16px; color: #F59E0B; fill: #F59E0B; }
-    .testimonial-text {
-      font-size: 0.9rem;
-      color: var(--neutral-700);
-      line-height: 1.7;
-      margin-bottom: 24px;
-      font-style: italic;
-    }
-    .testimonial-author { display: flex; align-items: center; gap: 12px; }
-    .ta-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--white);
+    .hb-icon {
+      width: 44px; height: 44px;
+      background: var(--green-pale);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
-    .ta-name { font-size: 0.88rem; font-weight: 700; color: var(--primary); }
-    .ta-role { font-size: 0.78rem; color: var(--neutral-500); margin-top: 2px; }
-    .testimonial-card.featured {
-      background: var(--primary);
-      border-color: transparent;
+    .hb-icon svg { width: 22px; height: 22px; color: var(--green); }
+    .hb-val { font-family: var(--sans); font-size: 20px; font-weight: 800; color: var(--ink); line-height: 1; }
+    .hb-lbl { font-family: var(--body); font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+    .hero-badge-2 {
+      position: absolute;
+      bottom: 40px; right: -20px;
+      background: var(--ink);
+      border-radius: var(--r-lg);
+      padding: 16px 20px;
+      z-index: 2;
+      min-width: 180px;
     }
-    .testimonial-card.featured .testimonial-text { color: rgba(255,255,255,0.8); }
-    .testimonial-card.featured .ta-name { color: var(--white); }
-    .testimonial-card.featured .ta-role { color: rgba(255,255,255,0.55); }
+    .hb2-label { font-family: var(--body); font-size: 11px; color: rgba(255,255,255,0.5); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .hb2-items { display: flex; flex-direction: column; gap: 7px; }
+    .hb2-item { display: flex; align-items: center; gap: 8px; font-family: var(--body); font-size: 12.5px; color: rgba(255,255,255,0.85); }
+    .hb2-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-light); flex-shrink: 0; }
 
-    /* ─── GUARANTEE ─── */
-    .guarantee-grid {
+    /* Hero bottom stats strip */
+    .hero-stats {
+      background: var(--ink);
+      padding: 28px 0;
+    }
+    .hero-stats-inner {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
+      gap: 0;
     }
-    .guarantee-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      text-align: center;
+    .hstat {
+      padding: 0 40px;
+      border-right: 1px solid rgba(255,255,255,0.08);
     }
-    .guarantee-icon {
-      width: 56px;
-      height: 56px;
-      background: rgba(0,168,107,0.15);
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
-    }
-    .guarantee-icon svg { width: 26px; height: 26px; color: #4ECCA3; }
-    .guarantee-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-    .guarantee-card p { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
-
-    /* ─── SOFTWARE ─── */
-    .software-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-    .software-logos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    .software-logo-card {
-      background: var(--white);
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      aspect-ratio: 3/2;
-      transition: all 0.25s ease;
-    }
-    .software-logo-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); }
-    .software-logo-card span {
-      font-size: 1rem;
+    .hstat:first-child { padding-left: 0; }
+    .hstat:last-child { border-right: none; }
+    .hstat-num {
+      font-family: var(--sans);
+      font-size: 32px;
       font-weight: 800;
-      color: var(--neutral-400);
-      letter-spacing: -0.02em;
-      transition: color 0.2s;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 5px;
     }
-    .software-logo-card:hover span { color: var(--primary); }
-    .software-content .badge { margin-bottom: 16px; }
-    .software-content h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
-      color: var(--primary);
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .software-content p {
-      font-size: 1rem;
-      color: var(--neutral-600);
-      line-height: 1.75;
+    .hstat-num span { color: var(--green-light); }
+    .hstat-lbl { font-family: var(--body); font-size: 13px; color: rgba(255,255,255,0.45); }
+
+    /* ── TRUST LOGOS ── */
+    .trust { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    .trust-label {
+      font-family: var(--body);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      text-align: center;
       margin-bottom: 28px;
     }
+    .trust-row { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .trust-chip {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--r-full);
+      transition: all 0.2s;
+    }
+    .trust-chip:hover { border-color: var(--ink); color: var(--ink); }
+    .trust-chip svg { width: 14px; height: 14px; color: var(--green); }
 
-    /* ─── CTA BANNER ─── */
-    .cta-banner {
-      background: linear-gradient(135deg, var(--accent) 0%, #009960 100%);
-      border-radius: var(--radius-xl);
-      padding: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
+    /* ── SECTION UTILITY ── */
+    .section { padding: 100px 0; }
+    .section-sm { padding: 72px 0; }
+    .section-alt { background: var(--surface); }
+    .section-ink { background: var(--ink); }
+    .section-dark { background: var(--ink-2); }
+
+    .s-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 18px;
+    }
+    .s-label::before { content: ''; width: 16px; height: 1.5px; background: var(--green); }
+    .s-label-light { color: rgba(255,255,255,0.5); }
+    .s-label-light::before { background: rgba(255,255,255,0.3); }
+
+    .s-title {
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 3.5vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .s-title em { font-style: italic; color: var(--green); }
+    .s-title-light { color: var(--white); }
+    .s-title-light em { color: rgba(255,255,255,0.6); }
+
+    .s-body {
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 560px;
+    }
+    .s-body-light { color: rgba(255,255,255,0.55); }
+
+    .s-header { margin-bottom: 64px; }
+    .s-header-center { text-align: center; }
+    .s-header-center .s-label { justify-content: center; }
+    .s-header-center .s-label::before { display: none; }
+    .s-header-center .s-label::after { content: ''; width: 16px; height: 1.5px; background: currentColor; }
+    .s-header-center .s-body { margin: 0 auto; }
+
+    /* ── SERVICES ── */
+    .services-layout { display: grid; grid-template-columns: 360px 1fr; gap: 80px; align-items: start; }
+    .services-sticky { position: sticky; top: 100px; }
+    .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .svc-card {
+      background: var(--surface);
+      padding: 36px;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .svc-card:hover { background: var(--surface-2); }
+    .svc-card:first-child { border-radius: var(--r-lg) 0 0 0; }
+    .svc-card:nth-child(2) { border-radius: 0 var(--r-lg) 0 0; }
+    .svc-card:nth-last-child(2) { border-radius: 0 0 0 var(--r-lg); }
+    .svc-card:last-child { border-radius: 0 0 var(--r-lg) 0; }
+    .svc-num {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted-2);
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+    .svc-icon {
+      width: 48px; height: 48px;
+      background: var(--white);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .svc-icon svg { width: 22px; height: 22px; color: var(--green); }
+    .svc-name {
+      font-family: var(--sans);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .svc-desc {
+      font-family: var(--body);
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+    .svc-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green);
+      margin-top: 16px;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: all 0.2s;
+    }
+    .svc-link svg { width: 12px; height: 12px; }
+    .svc-card:hover .svc-link { opacity: 1; transform: translateX(0); }
+
+    /* ── INDUSTRIES ── */
+    .ind-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: auto auto; gap: 16px; }
+    .ind-card {
+      position: relative; overflow: hidden;
+      border-radius: var(--r-lg);
+      cursor: pointer;
+      display: block;
+    }
+    .ind-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+    .ind-card:hover img { transform: scale(1.05); }
+    .ind-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,13,13,0.82) 0%, rgba(13,13,13,0.1) 55%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 22px;
+      transition: background 0.3s;
+    }
+    .ind-card:hover .ind-overlay { background: linear-gradient(to top, rgba(26,122,74,0.75) 0%, rgba(26,122,74,0.1) 55%, transparent 100%); }
+    .ind-name { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 3px; line-height: 1.2; }
+    .ind-sub { font-family: var(--body); font-size: 12px; color: rgba(255,255,255,0.65); }
+    .ind-card-sm { height: 200px; }
+    .ind-card-lg { height: 260px; grid-column: span 2; }
+
+    /* ── WHY US ── */
+    .why-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+    .why-visual { position: relative; }
+    .why-img {
+      width: 100%; height: 540px; object-fit: cover;
+      border-radius: var(--r-xl);
+    }
+    .why-float {
+      position: absolute;
+      right: -32px; bottom: 48px;
+      background: var(--white);
+      border-radius: var(--r-lg);
+      padding: 22px 26px;
+      box-shadow: 0 16px 60px rgba(0,0,0,0.12);
+      width: 230px;
+    }
+    .why-float-title { font-family: var(--body); font-size: 11px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .why-float-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .wfs-val { font-family: var(--sans); font-size: 24px; font-weight: 800; color: var(--ink); line-height: 1; }
+    .wfs-val span { color: var(--green); }
+    .wfs-lbl { font-family: var(--body); font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.3; }
+    .why-content {}
+    .why-points { display: flex; flex-direction: column; gap: 0; margin: 36px 0 44px; }
+    .why-point {
+      display: flex; align-items: flex-start; gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .why-point:first-child { border-top: 1px solid var(--border); }
+    .wp-num { font-family: var(--sans); font-size: 12px; font-weight: 700; color: var(--muted-2); min-width: 24px; margin-top: 2px; }
+    .wp-body h4 { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 5px; }
+    .wp-body p { font-family: var(--body); font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+    /* ── PROCESS ── */
+    .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .proc-card {
+      background: var(--surface);
+      padding: 44px 36px;
       position: relative;
       overflow: hidden;
     }
-    .cta-banner::before {
-      content: '';
+    .proc-card:first-child { border-radius: var(--r-lg) 0 0 var(--r-lg); }
+    .proc-card:last-child { border-radius: 0 var(--r-lg) var(--r-lg) 0; }
+    .proc-card.active { background: var(--ink); }
+    .proc-bg-num {
       position: absolute;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.08);
-      right: -80px;
-      top: -120px;
+      right: -20px; top: -20px;
+      font-family: var(--sans);
+      font-size: 120px;
+      font-weight: 800;
+      color: rgba(0,0,0,0.04);
+      line-height: 1;
+      user-select: none;
       pointer-events: none;
     }
-    .cta-banner::after {
-      content: '';
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.05);
-      right: 200px;
-      bottom: -60px;
-      pointer-events: none;
-    }
-    .cta-banner-text { position: relative; z-index: 1; }
-    .cta-banner-text .badge { background: rgba(255,255,255,0.2); color: var(--white); margin-bottom: 14px; }
-    .cta-banner-text h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-      color: var(--white);
-      line-height: 1.25;
-      margin-bottom: 12px;
-    }
-    .cta-banner-text p {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.8);
-      max-width: 480px;
-    }
-    .cta-banner-actions {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: flex-end;
-      flex-shrink: 0;
-    }
-    .btn-white {
-      background: var(--white);
-      color: var(--accent);
-    }
-    .btn-white:hover {
-      background: var(--neutral-100);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-    }
-    .cta-small-text { font-size: 0.78rem; color: rgba(255,255,255,0.65); text-align: center; }
-
-    /* ─── CONTACT ─── */
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 80px;
-      align-items: start;
-    }
-    .contact-info { position: sticky; top: 100px; }
-    .contact-info .badge { margin-bottom: 20px; }
-    .contact-info h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.9rem, 3vw, 2.5rem);
-      color: var(--primary);
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .contact-info p {
-      font-size: 1rem;
-      color: var(--neutral-600);
-      line-height: 1.75;
-      margin-bottom: 36px;
-    }
-    .contact-methods { display: flex; flex-direction: column; gap: 16px; }
-    .contact-method {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 18px;
-      background: var(--neutral-50);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--neutral-200);
-    }
-    .cm-icon {
-      width: 44px;
-      height: 44px;
-      background: var(--accent-muted);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .cm-icon svg { width: 20px; height: 20px; color: var(--accent); }
-    .cm-text h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 3px; }
-    .cm-text a, .cm-text span { font-size: 0.9rem; color: var(--neutral-700); text-decoration: none; }
-    .cm-text a:hover { color: var(--accent); }
-
-    .contact-form-card {
-      background: var(--white);
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-xl);
-      padding: 44px;
-      box-shadow: var(--shadow-lg);
-    }
-    .form-title {
-      font-size: 1.3rem;
+    .proc-card.active .proc-bg-num { color: rgba(255,255,255,0.04); }
+    .proc-num {
+      font-family: var(--sans);
+      font-size: 11px;
       font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 6px;
-    }
-    .form-subtitle {
-      font-size: 0.9rem;
-      color: var(--neutral-500);
-      margin-bottom: 32px;
-    }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-    .form-group label {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--neutral-700);
-    }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      padding: 13px 16px;
-      border: 1.5px solid var(--neutral-200);
-      border-radius: var(--radius-sm);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--neutral-900);
-      background: var(--white);
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-      outline: none;
-    }
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(0,168,107,0.12);
-    }
-    .form-group textarea { min-height: 100px; resize: vertical; }
-    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--neutral-400); }
-    .form-submit { width: 100%; justify-content: center; padding: 16px; font-size: 0.95rem; }
-
-    /* ─── FOOTER ─── */
-    .footer { background: var(--primary); padding: 72px 0 0; }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.8fr 1fr 1fr 1fr;
-      gap: 48px;
-      margin-bottom: 60px;
-    }
-    .footer-brand {}
-    .footer-logo { height: 40px; margin-bottom: 20px; filter: brightness(0) invert(1); }
-    .footer-brand p {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.55);
-      line-height: 1.7;
-      margin-bottom: 24px;
-      max-width: 280px;
-    }
-    .footer-socials { display: flex; gap: 10px; }
-    .footer-social {
-      width: 38px;
-      height: 38px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .footer-social:hover { background: var(--accent); color: var(--white); }
-    .footer-social svg { width: 16px; height: 16px; }
-    .footer-col h4 {
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.4);
+      color: var(--green);
+      margin-bottom: 24px;
+    }
+    .proc-card.active .proc-num { color: rgba(255,255,255,0.45); }
+    .proc-title {
+      font-family: var(--sans);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .proc-card.active .proc-title { color: var(--white); }
+    .proc-desc { font-family: var(--body); font-size: 14px; line-height: 1.65; color: var(--muted); }
+    .proc-card.active .proc-desc { color: rgba(255,255,255,0.55); }
+
+    /* ── TESTIMONIALS ── */
+    .testi-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
+    .testi-intro {}
+    .testi-score {
+      display: flex; align-items: center; gap: 14px;
+      margin-top: 36px;
+      padding: 20px 24px;
+      background: var(--green-pale);
+      border-radius: var(--r-lg);
+    }
+    .testi-score-big {
+      font-family: var(--sans);
+      font-size: 44px;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1;
+    }
+    .testi-score-stars { display: flex; gap: 2px; margin-bottom: 4px; }
+    .testi-score-stars svg { width: 15px; height: 15px; fill: var(--green); }
+    .testi-score-lbl { font-family: var(--body); font-size: 12px; color: var(--green); font-weight: 500; }
+    .testi-grid { display: flex; flex-direction: column; gap: 16px; }
+    .testi-card {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      padding: 32px;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+    }
+    .testi-card:hover { background: var(--white); border-color: var(--border); box-shadow: 0 8px 32px rgba(0,0,0,0.06); }
+    .testi-card.testi-featured {
+      background: var(--ink);
+      border-color: transparent;
+    }
+    .testi-quote { font-family: var(--body); font-size: 15px; line-height: 1.7; color: var(--ink-3); margin-bottom: 22px; }
+    .testi-card.testi-featured .testi-quote { color: rgba(255,255,255,0.8); }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--green-pale-2);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+    .testi-card.testi-featured .testi-avatar { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); }
+    .testi-name { font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1; margin-bottom: 3px; }
+    .testi-card.testi-featured .testi-name { color: var(--white); }
+    .testi-role { font-family: var(--body); font-size: 12px; color: var(--muted); }
+    .testi-card.testi-featured .testi-role { color: rgba(255,255,255,0.45); }
+    .testi-stars { display: flex; gap: 2px; margin-bottom: 16px; }
+    .testi-stars svg { width: 14px; height: 14px; fill: #E8A020; }
+    .testi-card.testi-featured .testi-stars svg { fill: rgba(255,255,255,0.5); }
+
+    /* ── GUARANTEE ── */
+    .guarantee-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    .g-card {
+      background: rgba(255,255,255,0.04);
+      padding: 40px 32px;
+      border-radius: 0;
+      text-align: left;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .g-card:first-child { border-radius: var(--r-lg) 0 0 var(--r-lg); }
+    .g-card:last-child { border-radius: 0 var(--r-lg) var(--r-lg) 0; border-right: none; }
+    .g-icon {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
       margin-bottom: 20px;
     }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul li a {
-      color: rgba(255,255,255,0.65);
-      text-decoration: none;
-      font-size: 0.875rem;
-      transition: color 0.2s ease;
-    }
-    .footer-col ul li a:hover { color: var(--white); }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 24px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-    .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
-    .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+    .g-icon svg { width: 24px; height: 24px; color: rgba(255,255,255,0.6); }
+    .g-title { font-family: var(--sans); font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 10px; line-height: 1.2; }
+    .g-desc { font-family: var(--body); font-size: 13px; line-height: 1.65; color: rgba(255,255,255,0.45); }
 
-    /* ─── BACK TO TOP ─── */
-    .back-to-top {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      width: 48px;
-      height: 48px;
-      background: var(--primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ── SOFTWARE ── */
+    .sw-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+    .sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sw-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 28px;
+      display: flex; align-items: center; justify-content: center;
+      aspect-ratio: 3/2;
+      transition: all 0.22s;
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--muted);
+      letter-spacing: -0.02em;
+    }
+    .sw-card:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+    .sw-badge {
+      grid-column: 1/-1;
+      background: var(--green-pale);
+      border: 1px solid var(--green-pale-2);
+      border-radius: var(--r-lg);
+      padding: 18px 22px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .sw-badge svg { width: 28px; height: 28px; color: var(--green); flex-shrink: 0; }
+    .sw-badge-text strong { font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--green); display: block; margin-bottom: 3px; }
+    .sw-badge-text span { font-family: var(--body); font-size: 12.5px; color: var(--green); opacity: 0.75; }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: var(--green);
+      padding: 72px 0;
+    }
+    .cta-strip-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 48px;
+    }
+    .cta-strip-text {}
+    .cta-strip h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
       color: var(--white);
-      text-decoration: none;
-      box-shadow: var(--shadow-lg);
-      opacity: 0;
-      transform: translateY(16px);
-      transition: all 0.3s ease;
-      z-index: 900;
+      margin-bottom: 12px;
     }
-    .back-to-top.visible { opacity: 1; transform: translateY(0); }
-    .back-to-top:hover { background: var(--accent); }
-    .back-to-top svg { width: 20px; height: 20px; }
+    .cta-strip p { font-family: var(--body); font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.6; max-width: 520px; }
+    .cta-strip-actions { display: flex; gap: 12px; flex-shrink: 0; }
+    .btn-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: var(--white);
+      color: var(--green);
+      font-family: var(--sans); font-size: 14px; font-weight: 700;
+      border-radius: var(--r-full);
+      border: 1.5px solid var(--white);
+      transition: all 0.22s;
+    }
+    .btn-white:hover { background: transparent; color: var(--white); transform: translateY(-2px); }
+    .btn-outline-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--white);
+      font-family: var(--sans); font-size: 14px; font-weight: 700;
+      border-radius: var(--r-full);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      transition: all 0.22s;
+    }
+    .btn-outline-white:hover { border-color: var(--white); transform: translateY(-2px); }
 
-    /* ─── MODAL ─── */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(10,37,64,0.6);
-      backdrop-filter: blur(4px);
-      z-index: 9000;
-      display: none;
+    /* ── REFER ── */
+    .refer-card {
+      background: var(--amber-pale);
+      border: 1px solid rgba(196,123,43,0.15);
+      border-radius: var(--r-xl);
+      padding: 52px 60px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
       align-items: center;
-      justify-content: center;
+    }
+    .refer-icon {
+      width: 64px; height: 64px;
+      background: rgba(196,123,43,0.12);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .refer-icon svg { width: 30px; height: 30px; color: var(--amber); }
+    .refer-card h3 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .refer-card p { font-family: var(--body); font-size: 15px; color: var(--muted); line-height: 1.65; max-width: 480px; }
+    .btn-amber {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      background: var(--amber);
+      color: var(--white);
+      font-family: var(--sans); font-size: 14px; font-weight: 700;
+      border-radius: var(--r-full);
+      border: 1.5px solid var(--amber);
+      transition: all 0.22s;
+      white-space: nowrap;
+    }
+    .btn-amber:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    /* ── CONTACT ── */
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+    .contact-info { position: sticky; top: 100px; }
+    .contact-methods { display: flex; flex-direction: column; gap: 0; margin-top: 36px; }
+    .cmethod {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .cmethod:first-child { border-top: 1px solid var(--border); }
+    .cmethod-icon {
+      width: 40px; height: 40px;
+      background: var(--green-pale);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .cmethod-icon svg { width: 18px; height: 18px; color: var(--green); }
+    .cmethod h4 { font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .cmethod a, .cmethod span { font-family: var(--body); font-size: 15px; color: var(--ink); }
+    .cmethod a:hover { color: var(--green); }
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      padding: 44px;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.05);
+    }
+    .cf-title { font-family: var(--sans); font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .cf-sub { font-family: var(--body); font-size: 14px; color: var(--muted); margin-bottom: 32px; line-height: 1.5; }
+    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .cf-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .cf-group label { font-family: var(--sans); font-size: 12px; font-weight: 700; color: var(--ink-3); letter-spacing: 0.04em; }
+    .cf-group input, .cf-group textarea, .cf-group select {
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-sm);
+      font-family: var(--body); font-size: 14px;
+      color: var(--ink);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+    .cf-group input:focus, .cf-group textarea:focus, .cf-group select:focus { border-color: var(--green); }
+    .cf-group input::placeholder, .cf-group textarea::placeholder { color: var(--muted-2); }
+    .cf-group textarea { min-height: 96px; resize: vertical; }
+    .cf-submit {
+      width: 100%; padding: 15px; justify-content: center;
+      font-size: 15px;
+      margin-top: 4px;
+    }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--ink-2); }
+    .footer-main { padding: 72px 0 60px; }
+    .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; }
+    .footer-brand {}
+    .footer-logo { height: 36px; margin-bottom: 18px; filter: brightness(0) invert(1); opacity: 0.9; }
+    .footer-tagline { font-family: var(--body); font-size: 13.5px; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 260px; margin-bottom: 24px; }
+    .footer-socials { display: flex; gap: 8px; }
+    .fsoc {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.5);
+      transition: all 0.2s;
+    }
+    .fsoc:hover { background: var(--green); color: var(--white); }
+    .fsoc svg { width: 15px; height: 15px; }
+    .footer-col-title { font-family: var(--sans); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.3); margin-bottom: 18px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links li a { font-family: var(--body); font-size: 13.5px; color: rgba(255,255,255,0.55); transition: color 0.18s; }
+    .footer-links li a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 22px 0; display: flex; align-items: center; justify-content: space-between; }
+    .footer-bottom p { font-family: var(--body); font-size: 12px; color: rgba(255,255,255,0.3); }
+    .footer-bottom a { color: rgba(255,255,255,0.35); transition: color 0.18s; }
+    .footer-bottom a:hover { color: rgba(255,255,255,0.65); }
+
+    /* ── SCROLL TOP ── */
+    .scroll-top {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 44px; height: 44px;
+      background: var(--ink);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      opacity: 0; transform: translateY(10px);
+      transition: all 0.3s;
+      z-index: 400;
+      cursor: pointer;
+    }
+    .scroll-top.show { opacity: 1; transform: translateY(0); }
+    .scroll-top:hover { background: var(--green); }
+    .scroll-top svg { width: 18px; height: 18px; }
+
+    /* ── MODAL ── */
+    .modal {
+      position: fixed; inset: 0;
+      background: rgba(13,13,13,0.7);
+      backdrop-filter: blur(6px);
+      z-index: 9000;
+      display: none; align-items: center; justify-content: center;
       padding: 24px;
     }
-    .modal-overlay.open { display: flex; }
+    .modal.open { display: flex; }
     .modal-box {
       background: var(--white);
-      border-radius: var(--radius-xl);
+      border-radius: var(--r-xl);
       padding: 44px;
-      max-width: 480px;
-      width: 100%;
-      box-shadow: var(--shadow-xl);
-      animation: modalIn 0.3s ease;
+      max-width: 460px; width: 100%;
+      position: relative;
+      animation: mIn 0.28s ease;
     }
-    @keyframes modalIn {
-      from { opacity: 0; transform: scale(0.95) translateY(20px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-    .modal-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--neutral-500);
-      padding: 4px;
-    }
-    .modal-close:hover { color: var(--neutral-900); }
-    .modal-close svg { width: 22px; height: 22px; }
-    .modal-header { margin-bottom: 24px; }
-    .modal-header h3 { font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
-    .modal-header p { font-size: 0.9rem; color: var(--neutral-500); }
+    @keyframes mIn { from { opacity:0; transform:translateY(20px) scale(0.97); } to { opacity:1; transform:none; } }
+    .modal-close { position: absolute; top: 18px; right: 18px; padding: 6px; color: var(--muted); transition: color 0.2s; }
+    .modal-close:hover { color: var(--ink); }
+    .modal-close svg { width: 20px; height: 20px; }
+    .modal-title { font-family: var(--sans); font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .modal-sub { font-family: var(--body); font-size: 13.5px; color: var(--muted); margin-bottom: 28px; line-height: 1.5; }
 
-    /* ─── ANIMATIONS ─── */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-    .fade-up-delay-1 { transition-delay: 0.1s; }
-    .fade-up-delay-2 { transition-delay: 0.2s; }
-    .fade-up-delay-3 { transition-delay: 0.3s; }
-    .fade-up-delay-4 { transition-delay: 0.4s; }
-    .fade-up-delay-5 { transition-delay: 0.5s; }
+    /* ── REVEAL ANIMATIONS ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: 0.08s; }
+    .reveal-d2 { transition-delay: 0.16s; }
+    .reveal-d3 { transition-delay: 0.24s; }
+    .reveal-d4 { transition-delay: 0.32s; }
+    .reveal-d5 { transition-delay: 0.4s; }
+    .reveal-d6 { transition-delay: 0.48s; }
 
-    /* ─── RESPONSIVE ─── */
+    /* ── RESPONSIVE ── */
     @media (max-width: 1100px) {
-      .hero { flex-direction: column; }
-      .hero-card { display: none; }
-      .industries-grid { grid-template-columns: repeat(2, 1fr); }
-      .industry-card-wide { grid-column: span 2; }
-      .why-us-layout { grid-template-columns: 1fr; gap: 48px; }
-      .why-us-stats-card { position: static; width: auto; margin-top: 24px; }
-      .why-us-img { height: 360px; }
-      .software-layout { grid-template-columns: 1fr; gap: 48px; }
-      .contact-layout { grid-template-columns: 1fr; gap: 48px; }
+      .hero-top { grid-template-columns: 1fr; gap: 0; padding-bottom: 0; }
+      .hero-img-wrap { border-radius: var(--r-xl); height: 360px; margin-top: 48px; }
+      .hero-badge { left: 0; top: 20px; }
+      .hero-badge-2 { right: 0; }
+      .hero-stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .hstat { padding: 20px 24px; }
+      .services-layout { grid-template-columns: 1fr; gap: 40px; }
+      .services-sticky { position: static; }
+      .ind-grid { grid-template-columns: repeat(2, 1fr); }
+      .ind-card-lg { grid-column: span 2; }
+      .why-layout { grid-template-columns: 1fr; gap: 40px; }
+      .why-float { position: static; width: auto; margin-top: 20px; }
+      .why-img { height: 380px; }
+      .testi-layout { grid-template-columns: 1fr; gap: 40px; }
+      .sw-layout { grid-template-columns: 1fr; gap: 48px; }
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
       .contact-info { position: static; }
+      .refer-card { grid-template-columns: 1fr; gap: 28px; padding: 36px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
+      .cta-strip-inner { flex-direction: column; }
     }
     @media (max-width: 768px) {
-      .nav-links, .nav-phone { display: none; }
-      .nav-toggle { display: flex; }
-      .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-top: 1px solid var(--neutral-200);
-        border-bottom: 1px solid var(--neutral-200);
-        padding: 12px 0;
-        box-shadow: var(--shadow-lg);
-        z-index: 999;
+      .wrap, .wrap-lg { padding: 0 20px; }
+      .topbar { display: none; }
+      .nav-menu { display: none; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; margin-left: auto; }
+      .nav-menu.open {
+        display: flex; flex-direction: column; gap: 0;
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--white); border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+        padding: 8px 0; z-index: 499;
       }
-      .nav-dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        border: none;
-        border-radius: 0;
-        background: var(--neutral-50);
-        padding: 0;
-        display: none;
-      }
-      .nav-links li.open .nav-dropdown { display: block; }
-      .announcement-bar .bar-inner { flex-direction: column; gap: 4px; }
-      .trust-bar-inner { gap: 20px; }
-      .trust-divider { display: none; }
-      .hero { padding: 64px 0; }
+      .nav-menu > li > a { padding: 12px 20px; border-radius: 0; }
+      .nav-dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; border-radius: 0; background: var(--surface); display: none; padding: 0; }
+      .nav-menu > li.open .nav-dropdown { display: block; }
+      .hero { padding: 56px 0 0; }
+      .hero h1 { font-size: 2.6rem; }
+      .hero-stats-inner { grid-template-columns: 1fr 1fr; }
       .section { padding: 64px 0; }
       .services-grid { grid-template-columns: 1fr; }
-      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .svc-card:first-child { border-radius: var(--r-lg) var(--r-lg) 0 0; }
+      .svc-card:nth-child(2) { border-radius: 0; }
+      .svc-card:nth-last-child(2) { border-radius: 0; }
+      .svc-card:last-child { border-radius: 0 0 var(--r-lg) var(--r-lg); }
+      .ind-grid { grid-template-columns: 1fr; }
+      .ind-card-lg { grid-column: span 1; }
       .process-grid { grid-template-columns: 1fr; }
-      .process-grid::before { display: none; }
-      .testimonials-grid { grid-template-columns: 1fr; }
+      .proc-card:first-child { border-radius: var(--r-lg) var(--r-lg) 0 0; }
+      .proc-card:last-child { border-radius: 0 0 var(--r-lg) var(--r-lg); }
       .guarantee-grid { grid-template-columns: 1fr 1fr; }
-      .cta-banner { flex-direction: column; padding: 36px; }
-      .cta-banner-actions { align-items: stretch; width: 100%; }
-      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
-      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
-      .form-row { grid-template-columns: 1fr; }
-      .contact-form-card { padding: 28px; }
-      .hero-stats { gap: 20px; }
-      .hero-stat-divider { display: none; }
-      .why-us-stats-card { grid-template-columns: 1fr 1fr; }
-      .industries-grid { grid-template-columns: 1fr; }
-      .industry-card-wide { grid-column: span 1; }
-      .modal-box { padding: 28px; }
-    }
-    @media (max-width: 480px) {
-      .guarantee-grid { grid-template-columns: 1fr; }
-      .software-logos { grid-template-columns: repeat(2, 1fr); }
+      .g-card:first-child { border-radius: var(--r-lg) 0 0 0; }
+      .g-card:nth-child(2) { border-radius: 0 var(--r-lg) 0 0; }
+      .g-card:nth-last-child(2) { border-radius: 0 0 0 var(--r-lg); }
+      .g-card:last-child { border-radius: 0 0 var(--r-lg) 0; border-right: none; }
+      .g-card:nth-child(2n) { border-right: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
+      .cf-row { grid-template-columns: 1fr; }
+      .contact-form { padding: 28px 24px; }
+      .modal-box { padding: 28px 24px; }
+      .hstat { padding: 16px; }
+      .cta-strip-actions { flex-direction: column; width: 100%; }
+      .cta-strip-actions a, .cta-strip-actions button { justify-content: center; }
     }
   </style>
 </head>
 <body>
 
-<!-- ANNOUNCEMENT BAR -->
-<div class="announcement-bar">
-  <div class="container">
-    <div class="bar-inner">
-      <span>Helping businesses startup, grow &amp; succeed <strong>since 1986</strong></span>
-      <div class="bar-contact">
-        <a href="tel:02086538538">020 8653 8538</a>
-        <span style="color: rgba(255,255,255,0.25);">|</span>
-        <a href="mailto:info@accountancygroup.com">info@accountancygroup.com</a>
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-inner">
+      <span class="topbar-left">Helping businesses startup, grow &amp; succeed <strong>since 1986</strong></span>
+      <div class="topbar-right">
+        <a href="tel:02086538538">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          020 8653 8538
+        </a>
+        <a href="mailto:info@accountancygroup.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+          info@accountancygroup.com
+        </a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <div class="navbar-inner">
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <img src="assets/images/logo-with-tagline.svg" alt="Accountancy Group">
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="current">Home</a></li>
         <li>
           <a href="#" onclick="return false;">
             Your Business
@@ -1316,139 +988,110 @@
         <li><a href="Who-we-are.html">Who We Are</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="tel:02086538538" class="nav-phone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          020 8653 8538
-        </a>
-        <a href="#contact" class="btn btn-primary" style="display:none;" id="navCta">Free Consultation</a>
-        <button class="btn btn-primary" onclick="openModal('consultModal')" style="padding:10px 20px;font-size:0.85rem;">Free Consultation</button>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <svg id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <button class="nav-cta" onclick="openModal()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Free Consultation
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-grid-overlay"></div>
-  <div class="hero-glow"></div>
-  <div class="container">
-    <div style="display:grid; grid-template-columns: 1fr auto; gap: 80px; align-items: center;">
-      <div class="hero-content">
-        <div class="hero-tag">Trusted Since 1986</div>
-        <h1>Your finances,<br><em>expertly managed</em><br>for growth.</h1>
-        <p>From sole traders to growing businesses — we provide the accountancy, tax, and advisory services you need to thrive. Based in South Norwood, serving London and beyond.</p>
-        <div class="hero-actions">
-          <button class="btn btn-primary" onclick="openModal('consultModal')">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <!-- Left -->
+      <div>
+        <div class="hero-eyebrow reveal">Trusted Accountants Since 1986</div>
+        <h1 class="reveal reveal-d1">
+          Achieve your<br>goals with <em>expert</em><br>financial guidance.
+        </h1>
+        <p class="hero-sub reveal reveal-d2">Helping businesses like yours startup, grow &amp; succeed. Based in South Norwood, serving London and beyond with tailored accountancy, tax and advisory services.</p>
+        <div class="hero-actions reveal reveal-d3">
+          <button class="btn-ink" onclick="openModal()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             Book Free Consultation
           </button>
-          <a href="#services" class="btn btn-outline">Explore Services</a>
+          <a href="#services" class="btn-outline-ink">Explore Services</a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-value">38+</div>
-            <div class="hero-stat-label">Years of Experience</div>
+      </div>
+      <!-- Right -->
+      <div class="hero-right reveal reveal-d2">
+        <div class="hero-img-wrap">
+          <img src="assets/images/office.jpg" alt="Accountancy Group office">
+          <div class="hero-badge">
+            <div class="hb-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="hb-val">100%</div>
+              <div class="hb-lbl">Satisfaction Guarantee</div>
+            </div>
           </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">500+</div>
-            <div class="hero-stat-label">Happy Clients</div>
-          </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">8</div>
-            <div class="hero-stat-label">Specialist Sectors</div>
-          </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <div class="hero-stat-value">100%</div>
-            <div class="hero-stat-label">Satisfaction Guaranteed</div>
+          <div class="hero-badge-2">
+            <div class="hb2-label">Services Included</div>
+            <div class="hb2-items">
+              <div class="hb2-item"><span class="hb2-dot"></span>Tax &amp; Accountancy</div>
+              <div class="hb2-item"><span class="hb2-dot"></span>Payroll &amp; HR</div>
+              <div class="hb2-item"><span class="hb2-dot"></span>Business Advisory</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero-visual" style="position:relative;">
-        <div class="hero-card">
-          <div class="hero-card-header">
-            <div class="hero-card-title">Your Business Health</div>
-            <div class="hero-card-badge">All Good</div>
-          </div>
-          <div class="hero-card-metric">£2.4M</div>
-          <div class="hero-card-sub">Annual Revenue Managed</div>
-          <div class="hero-card-services">
-            <div class="hero-card-service">
-              <div class="hcs-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M16 2l3 3-7 7H9V9l7-7z"/></svg>
-              </div>
-              <span class="hcs-label">Tax Return Filed</span>
-              <span class="hcs-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-            </div>
-            <div class="hero-card-service">
-              <div class="hcs-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-              </div>
-              <span class="hcs-label">Payroll On Schedule</span>
-              <span class="hcs-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-            </div>
-            <div class="hero-card-service">
-              <div class="hcs-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
-              </div>
-              <span class="hcs-label">VAT Compliant</span>
-              <span class="hcs-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-            </div>
-          </div>
+    </div>
+  </div>
+  <!-- Stats strip -->
+  <div class="hero-stats">
+    <div class="wrap">
+      <div class="hero-stats-inner">
+        <div class="hstat reveal reveal-d1">
+          <div class="hstat-num">38<span>+</span></div>
+          <div class="hstat-lbl">Years in Practice</div>
         </div>
-        <div class="hero-floating-badge">
-          <div class="hfb-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <div class="hfb-value">100% Risk Free</div>
-            <div class="hfb-label">Money-back guarantee</div>
-          </div>
+        <div class="hstat reveal reveal-d2">
+          <div class="hstat-num">500<span>+</span></div>
+          <div class="hstat-lbl">Happy Clients</div>
+        </div>
+        <div class="hstat reveal reveal-d3">
+          <div class="hstat-num">8</div>
+          <div class="hstat-lbl">Specialist Sectors</div>
+        </div>
+        <div class="hstat reveal reveal-d4">
+          <div class="hstat-num">30<span>+</span></div>
+          <div class="hstat-lbl">Days to Complete Accounts</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="container">
-    <div class="trust-bar-inner">
-      <div class="trust-item">
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <p class="trust-label">Trusted partners &amp; certifications</p>
+    <div class="trust-row">
+      <div class="trust-chip">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         Xero Certified Partner
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
+      <div class="trust-chip">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        HMRC Compliant
+        HMRC Registered
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Same Day Response
+      <div class="trust-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        QuickBooks Partner
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        500+ Satisfied Clients
+      <div class="trust-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Sage Certified
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-        Fixed Monthly Fees
+      <div class="trust-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        Companies House Agent
       </div>
     </div>
   </div>
@@ -1456,139 +1099,134 @@
 
 <!-- SERVICES -->
 <section class="section" id="services">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="badge badge-accent">Our Services</span>
-      <h2>Everything your business needs in one place</h2>
-      <p>From day-to-day bookkeeping to complex tax planning, we provide a complete suite of financial services tailored to your industry.</p>
-    </div>
-    <div class="services-grid">
-      <a href="#" class="service-card fade-up fade-up-delay-1">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M16 2l3 3-7 7H9V9l7-7z"/></svg>
+  <div class="wrap">
+    <div class="services-layout">
+      <div class="services-sticky">
+        <div class="s-label reveal">Our Services</div>
+        <h2 class="s-title reveal reveal-d1">Everything your business needs, <em>handled.</em></h2>
+        <p class="s-body reveal reveal-d2">From day-to-day bookkeeping to complex tax strategy, we offer a full suite of financial services tailored to your business and industry.</p>
+        <div style="margin-top:36px;" class="reveal reveal-d3">
+          <button class="btn-green" onclick="openModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Free Consultation
+          </button>
         </div>
-        <h3>Accountancy</h3>
-        <p>Preparing accounts and taxation to help you comply with Companies House, HMRC and other bodies' deadlines — on time and at the right cost.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal reveal-d1">
+          <div class="svc-num">01</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M16 2l3 3-7 7H9V9l7-7z"/></svg>
+          </div>
+          <div class="svc-name">Accountancy</div>
+          <div class="svc-desc">Preparing accounts and taxation to comply with Companies House, HMRC and other bodies — on time and at the right cost.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-      </a>
-      <a href="#" class="service-card fade-up fade-up-delay-2">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div class="svc-card reveal reveal-d2">
+          <div class="svc-num">02</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="svc-name">Auditing &amp; Taxation</div>
+          <div class="svc-desc">Complete personal and business tax, capital gains, inheritance tax, VAT and advance property tax planning.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-        <h3>Auditing &amp; Taxation</h3>
-        <p>Complete personal tax, business tax, capital gains, inheritance tax, VAT and advance tax planning including property investment.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <div class="svc-card reveal reveal-d3">
+          <div class="svc-num">03</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="svc-name">Bookkeeping</div>
+          <div class="svc-desc">Regular bookkeeping for all business types using Sage, Xero and QuickBooks, keeping your records accurate and current.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-      </a>
-      <a href="#" class="service-card fade-up fade-up-delay-3">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <div class="svc-card reveal reveal-d4">
+          <div class="svc-num">04</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="svc-name">Management Accounting</div>
+          <div class="svc-desc">Know how your business performs with regular management information to support lender relationships and smart decisions.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-        <h3>Bookkeeping</h3>
-        <p>Regular bookkeeping for all types of businesses using Sage, Xero, QuickBooks and more, keeping your records accurate and current.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <div class="svc-card reveal reveal-d5">
+          <div class="svc-num">05</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="svc-name">Payroll &amp; HR</div>
+          <div class="svc-desc">Prompt, accurate payroll services with weekly, monthly and bi-weekly payslips plus full RTI compliance to HMRC.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-      </a>
-      <a href="#" class="service-card fade-up fade-up-delay-4">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <div class="svc-card reveal reveal-d6">
+          <div class="svc-num">06</div>
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="svc-name">VAT &amp; Consultancy</div>
+          <div class="svc-desc">Complex VAT compliance plus business planning and consultancy to help you make major decisions tax-efficiently.</div>
+          <div class="svc-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
-        <h3>Management Accounting</h3>
-        <p>Knowing how your business performs is critical for smart decisions. We work with your lenders to provide regular management information.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-      <a href="#" class="service-card fade-up fade-up-delay-5">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <h3>Payroll &amp; HR</h3>
-        <p>Prompt, accurate and efficient payroll services with weekly, monthly and bi-weekly payslips plus full RTI compliance reporting to HMRC.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-      <a href="#" class="service-card fade-up fade-up-delay-1">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        </div>
-        <h3>Business Consultancy</h3>
-        <p>Years of industry experience helping you solve day-to-day challenges, make major decisions, and plan for buying or selling businesses tax-efficiently.</p>
-        <div class="service-link">
-          Learn more
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- INDUSTRIES -->
 <section class="section section-alt" id="industries">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="badge badge-accent">Industries We Serve</span>
-      <h2>Sector expertise that makes the difference</h2>
-      <p>We don't believe in one-size-fits-all. Our team has deep, hands-on experience across eight specialist industries.</p>
+  <div class="wrap">
+    <div class="s-header reveal">
+      <div class="s-label">Industries We Serve</div>
+      <h2 class="s-title">Sector expertise that<br>makes the <em>difference.</em></h2>
     </div>
-    <div class="industries-grid">
-      <a href="Retail-and-wholesale.html" class="industry-card industry-card-wide fade-up">
+    <div class="ind-grid">
+      <a href="Retail-and-wholesale.html" class="ind-card ind-card-lg reveal reveal-d1">
         <img src="assets/images/clem-onojeghuo-wmjtxztw4os-unsplash.jpg" alt="Retail & Wholesale">
-        <div class="industry-overlay">
-          <h3>Retail &amp; Wholesale</h3>
-          <span>Petrol stations, shops &amp; convenience stores</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Retail &amp; Wholesale</div>
+          <div class="ind-sub">Petrol stations, shops &amp; convenience stores</div>
         </div>
       </a>
-      <a href="Healthcare.html" class="industry-card fade-up fade-up-delay-1">
+      <a href="Healthcare.html" class="ind-card ind-card-sm reveal reveal-d2">
         <img src="assets/images/people-2594681.jpg" alt="Healthcare">
-        <div class="industry-overlay">
-          <h3>Healthcare</h3>
-          <span>Care homes, doctors &amp; dentists</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Healthcare</div>
+          <div class="ind-sub">Care homes, doctors &amp; dentists</div>
         </div>
       </a>
-      <a href="Hospitality.html" class="industry-card fade-up fade-up-delay-2">
+      <a href="Hospitality.html" class="ind-card ind-card-sm reveal reveal-d3">
         <img src="assets/images/bed-4416515.jpg" alt="Hospitality">
-        <div class="industry-overlay">
-          <h3>Hospitality</h3>
-          <span>Hotels &amp; leisure</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Hospitality</div>
+          <div class="ind-sub">Hotels &amp; leisure</div>
         </div>
       </a>
-      <a href="Construction.html" class="industry-card fade-up fade-up-delay-1">
+      <a href="Construction.html" class="ind-card ind-card-sm reveal reveal-d1">
         <img src="assets/images/architecture-3383067.jpg" alt="Construction">
-        <div class="industry-overlay">
-          <h3>Construction</h3>
-          <span>Building services &amp; support</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Construction</div>
+          <div class="ind-sub">Building services &amp; support</div>
         </div>
       </a>
-      <a href="Contractors.html" class="industry-card fade-up fade-up-delay-2">
+      <a href="Contractors.html" class="ind-card ind-card-sm reveal reveal-d2">
         <img src="assets/images/coding-1853305.jpg" alt="Contractors">
-        <div class="industry-overlay">
-          <h3>Contractors</h3>
-          <span>IT, oil &amp; gas contractors</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Contractors</div>
+          <div class="ind-sub">IT, oil &amp; gas</div>
         </div>
       </a>
-      <a href="Property.html" class="industry-card fade-up fade-up-delay-3">
+      <a href="Property.html" class="ind-card ind-card-sm reveal reveal-d3">
         <img src="assets/images/building-2762237.jpg" alt="Property">
-        <div class="industry-overlay">
-          <h3>Property</h3>
-          <span>Investments, buying &amp; selling</span>
+        <div class="ind-overlay">
+          <div class="ind-name">Property</div>
+          <div class="ind-sub">Investments, buying &amp; selling</div>
         </div>
       </a>
-      <a href="Professionals.html" class="industry-card industry-card-wide fade-up fade-up-delay-1">
-        <img src="assets/images/design-3588214.jpg" alt="Professionals">
-        <div class="industry-overlay">
-          <h3>Professional Services</h3>
-          <span>Architects, estate agents, solicitors &amp; more</span>
+      <a href="Professionals.html" class="ind-card ind-card-lg reveal reveal-d4">
+        <img src="assets/images/design-3588214.jpg" alt="Professional Services">
+        <div class="ind-overlay">
+          <div class="ind-name">Professional Services</div>
+          <div class="ind-sub">Architects, estate agents, solicitors &amp; more</div>
         </div>
       </a>
     </div>
@@ -1597,100 +1235,97 @@
 
 <!-- WHY US -->
 <section class="section" id="about">
-  <div class="container">
-    <div class="why-us-layout">
-      <div class="why-us-visual fade-up">
-        <img src="assets/images/office.jpg" alt="Accountancy Group Team" class="why-us-img">
-        <div class="why-us-stats-card">
-          <div class="mini-stat">
-            <div class="mini-stat-value">38<span>+</span></div>
-            <div class="mini-stat-label">Years in practice</div>
-          </div>
-          <div class="mini-stat">
-            <div class="mini-stat-value">500<span>+</span></div>
-            <div class="mini-stat-label">Active clients</div>
-          </div>
-          <div class="mini-stat">
-            <div class="mini-stat-value">8</div>
-            <div class="mini-stat-label">Specialist sectors</div>
-          </div>
-          <div class="mini-stat">
-            <div class="mini-stat-value">100<span>%</span></div>
-            <div class="mini-stat-label">Satisfaction guarantee</div>
+  <div class="wrap">
+    <div class="why-layout">
+      <div class="why-visual reveal">
+        <img src="assets/images/gabrielle-henderson-hjckknwcxxq-unsplash.jpg" alt="Business meeting" class="why-img">
+        <div class="why-float">
+          <div class="why-float-title">At a glance</div>
+          <div class="why-float-stats">
+            <div>
+              <div class="wfs-val">38<span>+</span></div>
+              <div class="wfs-lbl">Years in practice</div>
+            </div>
+            <div>
+              <div class="wfs-val">500<span>+</span></div>
+              <div class="wfs-lbl">Active clients</div>
+            </div>
+            <div>
+              <div class="wfs-val">8</div>
+              <div class="wfs-lbl">Industry sectors</div>
+            </div>
+            <div>
+              <div class="wfs-val">100<span>%</span></div>
+              <div class="wfs-lbl">Risk-free guarantee</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="why-us-content fade-up fade-up-delay-2">
-        <span class="badge badge-accent">Why Choose Us</span>
-        <h2>Business advice that actually works</h2>
-        <p>Whether you're a new startup or an established growing business, we provide the expert guidance and practical support you need at every stage of your journey.</p>
+      <div class="why-content">
+        <div class="s-label reveal">Why Accountancy Group</div>
+        <h2 class="s-title reveal reveal-d1">Business advice that <em>actually works.</em></h2>
+        <p class="s-body reveal reveal-d2">Whether you're a new startup or an established growing business, we provide expert guidance and practical support at every stage of your journey.</p>
         <div class="why-points">
-          <div class="why-point">
-            <div class="wp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <div class="wp-text">
+          <div class="why-point reveal reveal-d1">
+            <span class="wp-num">01</span>
+            <div class="wp-body">
               <h4>Fixed, transparent fees</h4>
-              <p>No surprise bills. You know exactly what you'll pay every month before we start.</p>
+              <p>No surprise bills. You know exactly what you'll pay each month before we start work.</p>
             </div>
           </div>
-          <div class="why-point">
-            <div class="wp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div class="wp-text">
-              <h4>Same-day responses</h4>
-              <p>Emails answered the same day if received before 3pm. Calls returned the same day.</p>
+          <div class="why-point reveal reveal-d2">
+            <span class="wp-num">02</span>
+            <div class="wp-body">
+              <h4>Same-day responses guaranteed</h4>
+              <p>Emails answered the same day before 3pm. Telephone calls returned the same day. Always.</p>
             </div>
           </div>
-          <div class="why-point">
-            <div class="wp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div class="wp-text">
+          <div class="why-point reveal reveal-d3">
+            <span class="wp-num">03</span>
+            <div class="wp-body">
               <h4>100% risk-free guarantee</h4>
-              <p>Not satisfied? We'll refund or not charge for the part of our service you're unhappy with.</p>
+              <p>Not satisfied? We'll refund or not charge for any part of our service you're unhappy with.</p>
             </div>
           </div>
-          <div class="why-point">
-            <div class="wp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            </div>
-            <div class="wp-text">
-              <h4>Dedicated team for your sector</h4>
-              <p>You'll work with specialists who already understand your industry's unique challenges.</p>
+          <div class="why-point reveal reveal-d4">
+            <span class="wp-num">04</span>
+            <div class="wp-body">
+              <h4>Dedicated sector specialists</h4>
+              <p>You'll work with people who already understand your industry's unique challenges and regulations.</p>
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" onclick="openModal('consultModal')">Get Your Free Consultation</button>
+        <button class="btn-ink reveal reveal-d5" onclick="openModal()">Get Free Consultation</button>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="badge badge-accent">How It Works</span>
-      <h2>Getting started is simple</h2>
-      <p>Switch to us in three easy steps — no disruption, no stress, just better accounting from day one.</p>
+<section class="section-sm section-alt">
+  <div class="wrap">
+    <div class="s-header s-header-center reveal">
+      <div class="s-label" style="justify-content:center;">How It Works</div>
+      <h2 class="s-title">Getting started is <em>simple.</em></h2>
     </div>
     <div class="process-grid">
-      <div class="process-step active fade-up fade-up-delay-1">
-        <div class="process-number">01</div>
-        <h3>Free Consultation</h3>
-        <p>Book a free, no-obligation consultation with one of our experts — in person, by phone, or via Zoom at a time that suits you.</p>
+      <div class="proc-card active reveal reveal-d1">
+        <div class="proc-bg-num">01</div>
+        <div class="proc-num">STEP 01</div>
+        <div class="proc-title">Free Consultation</div>
+        <p class="proc-desc">Book a free, no-obligation consultation with one of our experts — in person, by phone, or via Zoom at a time that suits you.</p>
       </div>
-      <div class="process-step fade-up fade-up-delay-2">
-        <div class="process-number">02</div>
-        <h3>Get Expert Advice</h3>
-        <p>We'll review your current situation, identify opportunities, and present a clear plan tailored to your business needs.</p>
+      <div class="proc-card reveal reveal-d2">
+        <div class="proc-bg-num">02</div>
+        <div class="proc-num">STEP 02</div>
+        <div class="proc-title">Get Expert Advice</div>
+        <p class="proc-desc">We review your situation, identify opportunities, and present a clear tailored plan for your business needs and goals.</p>
       </div>
-      <div class="process-step fade-up fade-up-delay-3">
-        <div class="process-number">03</div>
-        <h3>Switch to Us</h3>
-        <p>We handle the entire transition — contacting your previous accountant, migrating records, and getting you set up seamlessly.</p>
+      <div class="proc-card reveal reveal-d3">
+        <div class="proc-bg-num">03</div>
+        <div class="proc-num">STEP 03</div>
+        <div class="proc-title">Switch to Us</div>
+        <p class="proc-desc">We handle the entire transition — contacting your previous accountant, migrating your records, and getting you set up seamlessly.</p>
       </div>
     </div>
   </div>
@@ -1698,61 +1333,76 @@
 
 <!-- TESTIMONIALS -->
 <section class="section" id="testimonials">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="badge badge-accent">Client Stories</span>
-      <h2>Trusted by businesses across London</h2>
-      <p>Don't just take our word for it — here's what our clients say about working with Accountancy Group.</p>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card featured fade-up fade-up-delay-1">
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="testimonial-text">"Accountancy Group have been handling our finances for over 30 years. Their team understands our business inside out. We trust them completely with every aspect of our financial affairs."</p>
-        <div class="testimonial-author">
-          <div class="ta-avatar">VS</div>
+  <div class="wrap">
+    <div class="testi-layout">
+      <div class="testi-intro">
+        <div class="s-label reveal">Client Stories</div>
+        <h2 class="s-title reveal reveal-d1">Trusted by businesses <em>across London.</em></h2>
+        <p class="s-body reveal reveal-d2">Don't just take our word for it — here's what our long-standing clients say about working with us.</p>
+        <div class="testi-score reveal reveal-d3">
+          <div class="testi-score-big">5.0</div>
           <div>
-            <div class="ta-name">VS &amp; JS Group</div>
-            <div class="ta-role">Petrol &amp; convenience stores group</div>
+            <div class="testi-score-stars">
+              <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <div class="testi-score-lbl">Based on client reviews</div>
           </div>
         </div>
       </div>
-      <div class="testimonial-card fade-up fade-up-delay-2">
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="testimonial-text">"As a fast-growing environmental services business, we needed accountants who could keep pace with us. Accountancy Group have been invaluable since 2008."</p>
-        <div class="testimonial-author">
-          <div class="ta-avatar" style="background:linear-gradient(135deg,#0A2540,#00A86B);">CU</div>
-          <div>
-            <div class="ta-name">Clearup Solutions</div>
-            <div class="ta-role">Environmental Services, client since 2008</div>
+      <div class="testi-grid">
+        <div class="testi-card testi-featured reveal reveal-d1">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="testi-quote">"Accountancy Group have been handling our finances for over 30 years. Their team understands our business inside out and we trust them completely with every aspect of our financial affairs."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">VS</div>
+            <div>
+              <div class="testi-name">VS &amp; JS Group</div>
+              <div class="testi-role">Petrol &amp; convenience stores group — 30+ years</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="testimonial-card fade-up fade-up-delay-3">
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <div class="testi-card reveal reveal-d2">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="testi-quote">"As a fast-growing environmental services business, we needed accountants who could keep pace with our growth. Accountancy Group have been invaluable partners since 2008."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">CU</div>
+            <div>
+              <div class="testi-name">Clearup Solutions</div>
+              <div class="testi-role">Environmental Services — client since 2008</div>
+            </div>
+          </div>
         </div>
-        <p class="testimonial-text">"They helped me grow from a sole trader to a successful limited company. Their expertise and commitment to my business has been second to none."</p>
-        <div class="testimonial-author">
-          <div class="ta-avatar" style="background:linear-gradient(135deg,#1A3D6B,#00A86B);">ZB</div>
-          <div>
-            <div class="ta-name">Z-2-Z Builders</div>
-            <div class="ta-role">Construction, sole trader to Ltd company</div>
+        <div class="testi-card reveal reveal-d3">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#E8A020"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="testi-quote">"They helped me grow from a sole trader to a successful limited company. Their expertise and commitment has been second to none throughout the entire process."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">ZB</div>
+            <div>
+              <div class="testi-name">Z-2-Z Builders</div>
+              <div class="testi-role">Construction — grew from sole trader to Ltd</div>
+            </div>
           </div>
         </div>
       </div>
@@ -1761,77 +1411,70 @@
 </section>
 
 <!-- GUARANTEE -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="badge badge-light">Our Guarantees</span>
-      <h2>100% Risk-Free Service</h2>
-      <p>If at any time you're not completely satisfied with our work, we'll resolve it or refund the part of the service you're unhappy with. No questions asked.</p>
+<section class="section section-ink">
+  <div class="wrap">
+    <div class="s-header s-header-center reveal">
+      <div class="s-label s-label-light" style="justify-content:center;">Our Guarantees</div>
+      <h2 class="s-title s-title-light">100% Risk-Free <em>Service.</em></h2>
+      <p class="s-body s-body-light" style="margin:0 auto;">If at any time you're not satisfied, we'll resolve it or refund the part of our service you're unhappy with. No questions asked.</p>
     </div>
     <div class="guarantee-grid">
-      <div class="guarantee-card fade-up fade-up-delay-1">
-        <div class="guarantee-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+      <div class="g-card reveal reveal-d1">
+        <div class="g-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
         </div>
-        <h3>Same-Day Email Response</h3>
-        <p>All emails received before 3pm will be replied to the same day — always.</p>
+        <div class="g-title">Same-Day Email Response</div>
+        <p class="g-desc">All emails received before 3pm will be replied to the same day — without exception.</p>
       </div>
-      <div class="guarantee-card fade-up fade-up-delay-2">
-        <div class="guarantee-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <div class="g-card reveal reveal-d2">
+        <div class="g-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
         </div>
-        <h3>Calls Answered Same Day</h3>
-        <p>We'll always return your phone calls the same day — no endless voicemail loops.</p>
+        <div class="g-title">Calls Answered Same Day</div>
+        <p class="g-desc">We'll always return your phone calls the same day — no endless voicemail loops.</p>
       </div>
-      <div class="guarantee-card fade-up fade-up-delay-3">
-        <div class="guarantee-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <div class="g-card reveal reveal-d3">
+        <div class="g-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         </div>
-        <h3>Letters Within 2 Days</h3>
-        <p>Written correspondence is always addressed and responded to within two business days.</p>
+        <div class="g-title">Letters Within 2 Days</div>
+        <p class="g-desc">Written correspondence is always addressed and responded to within two business days.</p>
       </div>
-      <div class="guarantee-card fade-up fade-up-delay-4">
-        <div class="guarantee-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div class="g-card reveal reveal-d4">
+        <div class="g-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h3>Accounts in 30 Days</h3>
-        <p>Your accounts will be prepared within 30 days of us receiving all the information we need.</p>
+        <div class="g-title">Accounts in 30 Days</div>
+        <p class="g-desc">Your accounts prepared within 30 days of receiving all information from you.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SOFTWARE -->
-<section class="section">
-  <div class="container">
-    <div class="software-layout">
-      <div class="software-content fade-up">
-        <span class="badge badge-accent">Cloud Accounting</span>
-        <h2>Powered by the best accounting software</h2>
-        <p>We're certified partners with all the leading cloud accounting platforms. Get real-time visibility into your business performance from anywhere.</p>
-        <p>As a Xero Certified Partner, we can get you <strong>up to 3 months free cloud accounting software</strong> when you switch to us.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;">
-          <button class="btn btn-primary" onclick="openModal('consultModal')">Claim Free Software</button>
-          <a href="#contact" class="btn btn-ghost">Learn More</a>
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="sw-layout">
+      <div>
+        <div class="s-label reveal">Cloud Accounting</div>
+        <h2 class="s-title reveal reveal-d1">Powered by the best <em>accounting tools.</em></h2>
+        <p class="s-body reveal reveal-d2">We're certified partners with all leading cloud accounting platforms, giving your business real-time financial visibility from anywhere.</p>
+        <p class="s-body reveal reveal-d3" style="margin-top:16px;">As a Xero Certified Partner, we can get you <strong style="color:var(--ink);">up to 3 months free</strong> cloud accounting software when you join us.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap;" class="reveal reveal-d4">
+          <button class="btn-green" onclick="openModal()">Claim Free Software</button>
+          <a href="#contact" class="btn-outline-ink">Learn More</a>
         </div>
       </div>
-      <div class="software-logos fade-up fade-up-delay-2">
-        <div class="software-logo-card">
-          <span style="color:#13B5EA;font-size:1.2rem;">Xero</span>
-        </div>
-        <div class="software-logo-card">
-          <span style="color:#2CA01C;">QuickBooks</span>
-        </div>
-        <div class="software-logo-card">
-          <span style="color:#00B050;">Sage</span>
-        </div>
-        <div class="software-logo-card" style="grid-column:1/4;aspect-ratio:auto;padding:20px 24px;">
-          <div style="display:flex;align-items:center;gap:16px;width:100%;">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#00A86B" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <div>
-              <div style="font-size:0.85rem;font-weight:700;color:#0A2540;">Xero Certified Partner</div>
-              <div style="font-size:0.78rem;color:#6C757D;">Better deals, faster turnarounds for your business</div>
-            </div>
+      <div class="sw-grid reveal reveal-d2">
+        <div class="sw-card" style="color:#13B5EA;">Xero</div>
+        <div class="sw-card" style="color:#2CA01C;">QuickBooks</div>
+        <div class="sw-card" style="color:#00B050;">Sage</div>
+        <div class="sw-card" style="color:var(--muted);">+ More</div>
+        <div class="sw-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="sw-badge-text">
+            <strong>Xero Certified Partner</strong>
+            <span>Better deals and faster turnarounds for your business</span>
           </div>
         </div>
       </div>
@@ -1839,18 +1482,39 @@
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="section-sm">
-  <div class="container">
-    <div class="cta-banner fade-up">
-      <div class="cta-banner-text">
-        <span class="badge">Limited Offer</span>
-        <h2>Get 3 months free cloud accounting — refer a friend and earn a gift</h2>
-        <p>Refer a business to us and they get 3 months free Xero. You'll receive a Fortnum &amp; Mason £30 gift hamper as our thank you.</p>
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="wrap">
+    <div class="cta-strip-inner reveal">
+      <div class="cta-strip-text">
+        <h2>Ready to take control of your finances?</h2>
+        <p>Book a free, no-obligation consultation and find out exactly how we can help your business thrive. No pressure — just expert advice from people who care.</p>
       </div>
-      <div class="cta-banner-actions">
-        <button class="btn btn-white" onclick="openModal('consultModal')">Book Free Consultation</button>
-        <span class="cta-small-text">No commitment required</span>
+      <div class="cta-strip-actions">
+        <button class="btn-white" onclick="openModal()">Book Free Consultation</button>
+        <a href="tel:02086538538" class="btn-outline-white">020 8653 8538</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REFER -->
+<section class="section-sm">
+  <div class="wrap">
+    <div class="refer-card reveal">
+      <div>
+        <div class="refer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+        </div>
+        <h3>Refer a business,<br>earn a gift.</h3>
+        <p>Refer a business to us and they get 3 months free Xero accounting software. You'll receive a Fortnum &amp; Mason £30 gift hamper as our thank you — it's our way of rewarding your loyalty.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <button class="btn-amber" onclick="openModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          Refer a Friend
+        </button>
+        <span style="font-family:var(--body);font-size:12px;color:var(--muted);">No obligation</span>
       </div>
     </div>
   </div>
@@ -1858,83 +1522,83 @@
 
 <!-- CONTACT -->
 <section class="section section-alt" id="contact">
-  <div class="container">
+  <div class="wrap">
     <div class="contact-layout">
-      <div class="contact-info fade-up">
-        <span class="badge badge-accent">Get In Touch</span>
-        <h2>Ready to take control of your finances?</h2>
-        <p>Book a free, no-obligation consultation and find out how we can help your business thrive. No pressure, just expert advice.</p>
+      <div class="contact-info">
+        <div class="s-label reveal">Get In Touch</div>
+        <h2 class="s-title reveal reveal-d1">Let's talk about your <em>business.</em></h2>
+        <p class="s-body reveal reveal-d2">Book a free, no-obligation consultation and find out how we can help. No pressure, just expert advice tailored to your business.</p>
         <div class="contact-methods">
-          <div class="contact-method">
-            <div class="cm-icon">
+          <div class="cmethod reveal reveal-d3">
+            <div class="cmethod-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-            <div class="cm-text">
-              <h4>Call us</h4>
+            <div>
+              <h4>Call</h4>
               <a href="tel:02086538538">020 8653 8538</a>
             </div>
           </div>
-          <div class="contact-method">
-            <div class="cm-icon">
+          <div class="cmethod reveal reveal-d4">
+            <div class="cmethod-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
             </div>
-            <div class="cm-text">
-              <h4>Email us</h4>
+            <div>
+              <h4>Email</h4>
               <a href="mailto:info@accountancygroup.com">info@accountancygroup.com</a>
             </div>
           </div>
-          <div class="contact-method">
-            <div class="cm-icon">
+          <div class="cmethod reveal reveal-d5">
+            <div class="cmethod-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div class="cm-text">
-              <h4>Visit us</h4>
-              <span>SVS House, Oliver Grove,<br>South Norwood, London SE25 6EJ</span>
+            <div>
+              <h4>Visit</h4>
+              <span>SVS House, Oliver Grove, South Norwood, London SE25 6EJ</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="contact-form-card fade-up fade-up-delay-2">
-        <div class="form-title">Send us a message</div>
-        <div class="form-subtitle">We'll get back to you within one business day.</div>
-        <form onsubmit="handleFormSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" placeholder="John" required>
+      <div class="contact-form reveal reveal-d2">
+        <div class="cf-title">Send us a message</div>
+        <div class="cf-sub">We'll get back to you within one business day.</div>
+        <form onsubmit="submitForm(event)">
+          <div class="cf-row">
+            <div class="cf-group">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required>
             </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" placeholder="Smith">
+            <div class="cf-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Smith">
             </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="john@yourcompany.com" required>
+          <div class="cf-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@yourcompany.com" required>
           </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="020 XXXX XXXX">
+          <div class="cf-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="020 XXXX XXXX">
           </div>
-          <div class="form-group">
-            <label for="service">Service of Interest</label>
-            <select id="service">
+          <div class="cf-group">
+            <label>Service of Interest</label>
+            <select>
               <option value="">Select a service...</option>
               <option>Accountancy</option>
               <option>Auditing &amp; Taxation</option>
               <option>Bookkeeping</option>
               <option>Payroll &amp; HR</option>
               <option>Management Accounting</option>
-              <option>Business Consultancy</option>
               <option>VAT</option>
-              <option>Other</option>
+              <option>Business Consultancy</option>
+              <option>Business Planning</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us a bit about your business and how we can help..."></textarea>
+          <div class="cf-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your business and how we can help..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary form-submit">
+          <button type="submit" class="btn-ink cf-submit">
             Send Message
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
@@ -1946,93 +1610,97 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/images/logo-with-tagline.svg" alt="Accountancy Group" class="footer-logo">
-        <p>Expert accountants helping businesses in London startup, grow and succeed since 1986. Based in South Norwood, serving clients across the UK.</p>
-        <div class="footer-socials">
-          <a href="https://twitter.com/Ruvas" class="footer-social" target="_blank" rel="noopener" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-          </a>
-          <a href="https://facebook.com/AccountancyGroup" class="footer-social" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-          </a>
+  <div class="footer-main">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-with-tagline.svg" alt="Accountancy Group" class="footer-logo">
+          <p class="footer-tagline">Expert accountants helping London businesses startup, grow and succeed since 1986. Based in South Norwood, serving clients across the UK.</p>
+          <div class="footer-socials">
+            <a href="https://twitter.com/Ruvas" class="fsoc" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="https://facebook.com/AccountancyGroup" class="fsoc" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">Accountancy</a></li>
+            <li><a href="#">Auditing &amp; Taxation</a></li>
+            <li><a href="#">Bookkeeping</a></li>
+            <li><a href="#">Payroll &amp; HR</a></li>
+            <li><a href="#">VAT</a></li>
+            <li><a href="#">Business Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Industries</div>
+          <ul class="footer-links">
+            <li><a href="Retail-and-wholesale.html">Retail &amp; Wholesale</a></li>
+            <li><a href="Healthcare.html">Healthcare</a></li>
+            <li><a href="Hospitality.html">Hospitality</a></li>
+            <li><a href="Property.html">Property</a></li>
+            <li><a href="Construction.html">Construction</a></li>
+            <li><a href="Contractors.html">Contractors</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="Who-we-are.html">Who We Are</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="Covid-19.html">Covid-19 Support</a></li>
+            <li><a href="Tax-assessment.html">Tax Assessment</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Accountancy</a></li>
-          <li><a href="#">Auditing &amp; Taxation</a></li>
-          <li><a href="#">Bookkeeping</a></li>
-          <li><a href="#">Payroll &amp; HR</a></li>
-          <li><a href="#">VAT</a></li>
-          <li><a href="#">Business Planning</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Industries</h4>
-        <ul>
-          <li><a href="Retail-and-wholesale.html">Retail &amp; Wholesale</a></li>
-          <li><a href="Healthcare.html">Healthcare</a></li>
-          <li><a href="Hospitality.html">Hospitality</a></li>
-          <li><a href="Property.html">Property</a></li>
-          <li><a href="Construction.html">Construction</a></li>
-          <li><a href="Contractors.html">Contractors</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="Who-we-are.html">Who We Are</a></li>
-          <li><a href="Privacy.html">Privacy Policy</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="Covid-19.html">Covid-19 Support</a></li>
-          <li><a href="Tax-assessment.html">Tax Assessment</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Accountancy Group. All rights reserved. | <a href="Privacy.html">Privacy Policy</a></p>
-      <p>SVS House, Oliver Grove, South Norwood, London SE25 6EJ</p>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap" style="width:100%;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+        <p>&copy; 2024 Accountancy Group. All rights reserved. | <a href="Privacy.html">Privacy Policy</a></p>
+        <p>SVS House, Oliver Grove, South Norwood, London SE25 6EJ</p>
+      </div>
     </div>
   </div>
 </footer>
 
-<!-- BACK TO TOP -->
-<a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
-</a>
+<!-- SCROLL TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
-<!-- CONSULTATION MODAL -->
-<div class="modal-overlay" id="consultModal">
-  <div class="modal-box" style="position:relative;">
-    <button class="modal-close" onclick="closeModal('consultModal')">
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-    <div class="modal-header">
-      <h3>Book Your Free Consultation</h3>
-      <p>No obligation. No sales pressure. Just expert advice.</p>
-    </div>
-    <form onsubmit="handleModalSubmit(event)">
-      <div class="form-group">
-        <label for="mName">Your Name</label>
-        <input type="text" id="mName" placeholder="John Smith" required>
+    <div class="modal-title">Book Your Free Consultation</div>
+    <div class="modal-sub">No obligation. No sales pressure. Just expert advice from people who care about your business.</div>
+    <form onsubmit="submitModal(event)">
+      <div class="cf-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="John Smith" required>
       </div>
-      <div class="form-group">
-        <label for="mEmail">Email Address</label>
-        <input type="email" id="mEmail" placeholder="john@company.com" required>
+      <div class="cf-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@company.com" required>
       </div>
-      <div class="form-group">
-        <label for="mPhone">Phone Number</label>
-        <input type="tel" id="mPhone" placeholder="020 XXXX XXXX">
+      <div class="cf-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="020 XXXX XXXX">
       </div>
-      <div class="form-group">
-        <label for="mBusiness">Business Type</label>
-        <input type="text" id="mBusiness" placeholder="e.g. Retail shop, IT contractor...">
+      <div class="cf-group">
+        <label>Business Type</label>
+        <input type="text" placeholder="e.g. Retail shop, IT contractor, Care home...">
       </div>
-      <button type="submit" class="btn btn-primary form-submit">
+      <button type="submit" class="btn-ink" style="width:100%;justify-content:center;padding:15px;">
         Book Free Consultation
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
@@ -2041,74 +1709,51 @@
 </div>
 
 <script>
-  // Navbar scroll effect
-  const navbar = document.getElementById('navbar');
+  // Scroll effects
   window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
-    document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+    document.getElementById('scrollTop').classList.toggle('show', scrollY > 500);
   });
 
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+  // Mobile nav
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('open');
   });
-
-  // Dropdown on mobile
-  navLinks.querySelectorAll('li > a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const li = link.parentElement;
-      if (li.querySelector('.nav-dropdown') && window.innerWidth < 768) {
+  document.querySelectorAll('#navMenu > li > a').forEach(a => {
+    a.addEventListener('click', e => {
+      if (a.nextElementSibling?.classList.contains('nav-dropdown') && window.innerWidth < 768) {
         e.preventDefault();
-        li.classList.toggle('open');
+        a.parentElement.classList.toggle('open');
       }
     });
   });
 
-  // Intersection Observer for fade-up animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   // Modal
-  function openModal(id) {
-    document.getElementById(id).classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeModal(id) {
-    document.getElementById(id).classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('.modal-overlay').forEach(overlay => {
-    overlay.addEventListener('click', (e) => {
-      if (e.target === overlay) closeModal(overlay.id);
-    });
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
-  });
+  function openModal() { document.getElementById('modal').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal() { document.getElementById('modal').classList.remove('open'); document.body.style.overflow = ''; }
+  document.getElementById('modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-  // Form handlers
-  function handleFormSubmit(e) {
+  // Forms
+  function submitForm(e) {
     e.preventDefault();
     const btn = e.target.querySelector('[type=submit]');
-    btn.textContent = 'Message Sent!';
-    btn.style.background = 'var(--success)';
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; e.target.reset(); }, 3000);
+    const orig = btn.innerHTML;
+    btn.innerHTML = 'Message sent!';
+    btn.style.background = '#1A7A4A';
+    setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; e.target.reset(); }, 3000);
   }
-  function handleModalSubmit(e) {
+  function submitModal(e) {
     e.preventDefault();
     const btn = e.target.querySelector('[type=submit]');
-    btn.textContent = 'Booked! We\'ll be in touch.';
-    btn.style.background = 'var(--success)';
-    setTimeout(() => { closeModal('consultModal'); e.target.reset(); btn.textContent = 'Book Free Consultation'; btn.style.background = ''; }, 2500);
+    btn.innerHTML = "We'll be in touch soon!";
+    btn.style.background = '#1A7A4A';
+    setTimeout(() => { closeModal(); e.target.reset(); btn.innerHTML = 'Book Free Consultation'; btn.style.background = ''; }, 2500);
   }
 </script>
 </body>
