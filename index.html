@@ -1,1270 +1,2115 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-  <meta name="description" content="Accountants in South Norwood">
-  
-  
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/Material-Design-Icons/css/material.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/FontAwesome/css/font-awesome.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/popup-overlay-plugin/style.css">
-  <link rel="stylesheet" href="assets/smart-cart/minicart-theme.css">
-  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
-  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
-  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/recaptcha.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <meta name="description" content="Accountancy Group – Expert accountants in South Norwood helping businesses startup, grow and succeed since 1986.">
+  <title>Accountancy Group | Expert Accountants in South Norwood</title>
 
-  
-  <!-- Hotjar Tracking Code for www.accountancygroup.com -->
-<script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Hotjar -->
+  <script>
     (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2125893,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2125893,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  </script>
 
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
-  
+    :root {
+      --primary: #0A2540;
+      --primary-light: #1A3D6B;
+      --accent: #00A86B;
+      --accent-light: #00C17D;
+      --accent-muted: #E6F7F1;
+      --neutral-50: #F8F9FA;
+      --neutral-100: #F1F3F5;
+      --neutral-200: #E9ECEF;
+      --neutral-300: #DEE2E6;
+      --neutral-400: #CED4DA;
+      --neutral-500: #ADB5BD;
+      --neutral-600: #6C757D;
+      --neutral-700: #495057;
+      --neutral-800: #343A40;
+      --neutral-900: #212529;
+      --white: #FFFFFF;
+      --error: #DC3545;
+      --warning: #FD7E14;
+      --success: #28A745;
+      --font-body: 'Inter', sans-serif;
+      --font-display: 'DM Serif Display', serif;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+      --shadow-xl: 0 24px 64px rgba(0,0,0,0.16);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+    }
 
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--neutral-900);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── UTILITY ─── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .container-wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,168,107,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.4);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.7);
+    }
+    .btn-dark {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .btn-dark:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(10,37,64,0.3);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--primary);
+      border: 1.5px solid var(--neutral-300);
+    }
+    .btn-ghost:hover {
+      border-color: var(--primary);
+      background: var(--neutral-50);
+    }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .badge-accent { background: var(--accent-muted); color: var(--accent); }
+    .badge-light { background: rgba(255,255,255,0.15); color: var(--white); }
+
+    /* ─── ANNOUNCEMENT BAR ─── */
+    .announcement-bar {
+      background: var(--primary);
+      color: rgba(255,255,255,0.85);
+      font-size: 0.8rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+    .announcement-bar a { color: var(--accent-light); text-decoration: none; font-weight: 600; }
+    .announcement-bar a:hover { text-decoration: underline; }
+    .announcement-bar .bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .bar-contact { display: flex; align-items: center; gap: 20px; }
+    .bar-contact a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .bar-contact a:hover { color: var(--white); }
+
+    /* ─── NAVBAR ─── */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 1px solid var(--neutral-200);
+      transition: box-shadow 0.3s ease;
+    }
+    .navbar.scrolled { box-shadow: var(--shadow-md); }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      height: 72px;
+      gap: 40px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+      flex: 1;
+    }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 14px;
+      color: var(--neutral-700);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+    .nav-links > li > a:hover, .nav-links > li > a.active {
+      color: var(--primary);
+      background: var(--neutral-50);
+    }
+    .nav-links > li > a svg { width: 14px; height: 14px; transition: transform 0.2s ease; }
+    .nav-links > li:hover > a svg { transform: rotate(180deg); }
+
+    /* Dropdown */
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      min-width: 220px;
+      padding: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: all 0.2s ease;
+      list-style: none;
+    }
+    .nav-links > li:hover .nav-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .nav-dropdown li a {
+      display: block;
+      padding: 10px 14px;
+      color: var(--neutral-700);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+    }
+    .nav-dropdown li a:hover {
+      color: var(--primary);
+      background: var(--neutral-50);
+    }
+    .nav-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+    .nav-phone {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-phone svg { color: var(--accent); }
+    .nav-phone:hover { color: var(--accent); }
+
+    /* Mobile toggle */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      color: var(--primary);
+      margin-left: auto;
+    }
+    .nav-toggle svg { width: 24px; height: 24px; }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 80px;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('assets/images/hero-image-3.jpg') center/cover no-repeat;
+      opacity: 0.12;
+    }
+    .hero-grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    .hero-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,168,107,0.18) 0%, transparent 70%);
+      right: -100px;
+      top: -100px;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      background: rgba(0,168,107,0.15);
+      border: 1px solid rgba(0,168,107,0.3);
+      border-radius: 50px;
+      color: #4ECCA3;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .hero-tag::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #4ECCA3;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat {}
+    .hero-stat-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 500;
+    }
+    .hero-stat-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(255,255,255,0.12);
+    }
+    .hero-visual {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      width: 340px;
+    }
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .hero-card-title { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-weight: 500; }
+    .hero-card-badge {
+      background: rgba(0,168,107,0.2);
+      color: #4ECCA3;
+      padding: 4px 10px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .hero-card-metric {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .hero-card-sub { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; }
+    .hero-card-services { display: flex; flex-direction: column; gap: 10px; }
+    .hero-card-service {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.06);
+      border-radius: var(--radius-sm);
+    }
+    .hcs-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(0,168,107,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hcs-icon svg { width: 14px; height: 14px; color: #4ECCA3; }
+    .hcs-label { font-size: 0.82rem; color: rgba(255,255,255,0.8); font-weight: 500; }
+    .hcs-check { margin-left: auto; color: #4ECCA3; }
+    .hcs-check svg { width: 14px; height: 14px; }
+
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hfb-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-muted);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hfb-icon svg { width: 20px; height: 20px; color: var(--accent); }
+    .hfb-value { font-size: 1.1rem; font-weight: 800; color: var(--primary); line-height: 1; }
+    .hfb-label { font-size: 0.72rem; color: var(--neutral-500); }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--neutral-50);
+      border-bottom: 1px solid var(--neutral-200);
+      padding: 20px 0;
+    }
+    .trust-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--neutral-600);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .trust-item svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+    .trust-divider { width: 1px; height: 20px; background: var(--neutral-300); }
+
+    /* ─── SECTION SHARED ─── */
+    .section { padding: 96px 0; }
+    .section-sm { padding: 64px 0; }
+    .section-alt { background: var(--neutral-50); }
+    .section-dark { background: var(--primary); }
+    .section-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
+    .section-header .badge { margin-bottom: 16px; }
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      font-size: 1.05rem;
+      color: var(--neutral-600);
+      line-height: 1.7;
+    }
+    .section-dark .section-header h2 { color: var(--white); }
+    .section-dark .section-header p { color: rgba(255,255,255,0.65); }
+
+    /* ─── SERVICES ─── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      border-color: transparent;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--accent-muted);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-icon svg { width: 26px; height: 26px; color: var(--accent); }
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+    .service-card p {
+      font-size: 0.875rem;
+      color: var(--neutral-600);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .service-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .service-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
+    .service-card:hover .service-link svg { transform: translateX(3px); }
+
+    /* ─── INDUSTRIES ─── */
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .industry-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+      display: block;
+    }
+    .industry-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .industry-card:hover img { transform: scale(1.06); }
+    .industry-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10,37,64,0.88) 0%, rgba(10,37,64,0.2) 60%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    .industry-card h3 {
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .industry-card span {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.78rem;
+    }
+    .industry-card-wide {
+      grid-column: span 2;
+      aspect-ratio: 16/7;
+    }
+
+    /* ─── WHY US ─── */
+    .why-us-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .why-us-visual { position: relative; }
+    .why-us-img {
+      width: 100%;
+      border-radius: var(--radius-xl);
+      object-fit: cover;
+      height: 480px;
+    }
+    .why-us-stats-card {
+      position: absolute;
+      bottom: -32px;
+      right: -32px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-xl);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 260px;
+    }
+    .mini-stat {}
+    .mini-stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .mini-stat-value span { color: var(--accent); }
+    .mini-stat-label {
+      font-size: 0.72rem;
+      color: var(--neutral-500);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+    .why-us-content .badge { margin-bottom: 20px; }
+    .why-us-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .why-us-content p {
+      font-size: 1rem;
+      color: var(--neutral-600);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+    .why-points { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+    .why-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .wp-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .wp-icon svg { width: 18px; height: 18px; color: var(--accent); }
+    .wp-text h4 { font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 3px; }
+    .wp-text p { font-size: 0.85rem; color: var(--neutral-600); line-height: 1.5; }
+
+    /* ─── PROCESS ─── */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .process-grid::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: calc(16.66% + 32px);
+      right: calc(16.66% + 32px);
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--neutral-300) 50%, var(--accent) 100%);
+      z-index: 0;
+    }
+    .process-step {
+      text-align: center;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
+    }
+    .process-number {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--neutral-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--neutral-400);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .process-step:hover .process-number {
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 0 8px var(--accent-muted);
+    }
+    .process-step.active .process-number {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--white);
+      box-shadow: 0 0 0 8px var(--accent-muted);
+    }
+    .process-step h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+    .process-step p { font-size: 0.875rem; color: var(--neutral-600); line-height: 1.6; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+    .testimonial-card:hover {
+      border-color: transparent;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 18px;
+    }
+    .testimonial-stars svg { width: 16px; height: 16px; color: #F59E0B; fill: #F59E0B; }
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--neutral-700);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+    .ta-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .ta-name { font-size: 0.88rem; font-weight: 700; color: var(--primary); }
+    .ta-role { font-size: 0.78rem; color: var(--neutral-500); margin-top: 2px; }
+    .testimonial-card.featured {
+      background: var(--primary);
+      border-color: transparent;
+    }
+    .testimonial-card.featured .testimonial-text { color: rgba(255,255,255,0.8); }
+    .testimonial-card.featured .ta-name { color: var(--white); }
+    .testimonial-card.featured .ta-role { color: rgba(255,255,255,0.55); }
+
+    /* ─── GUARANTEE ─── */
+    .guarantee-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .guarantee-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      text-align: center;
+    }
+    .guarantee-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(0,168,107,0.15);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .guarantee-icon svg { width: 26px; height: 26px; color: #4ECCA3; }
+    .guarantee-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .guarantee-card p { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+    /* ─── SOFTWARE ─── */
+    .software-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .software-logos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .software-logo-card {
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 3/2;
+      transition: all 0.25s ease;
+    }
+    .software-logo-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); }
+    .software-logo-card span {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--neutral-400);
+      letter-spacing: -0.02em;
+      transition: color 0.2s;
+    }
+    .software-logo-card:hover span { color: var(--primary); }
+    .software-content .badge { margin-bottom: 16px; }
+    .software-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .software-content p {
+      font-size: 1rem;
+      color: var(--neutral-600);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    /* ─── CTA BANNER ─── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--accent) 0%, #009960 100%);
+      border-radius: var(--radius-xl);
+      padding: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      right: -80px;
+      top: -120px;
+      pointer-events: none;
+    }
+    .cta-banner::after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      right: 200px;
+      bottom: -60px;
+      pointer-events: none;
+    }
+    .cta-banner-text { position: relative; z-index: 1; }
+    .cta-banner-text .badge { background: rgba(255,255,255,0.2); color: var(--white); margin-bottom: 14px; }
+    .cta-banner-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .cta-banner-text p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 480px;
+    }
+    .cta-banner-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+    .btn-white {
+      background: var(--white);
+      color: var(--accent);
+    }
+    .btn-white:hover {
+      background: var(--neutral-100);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .cta-small-text { font-size: 0.78rem; color: rgba(255,255,255,0.65); text-align: center; }
+
+    /* ─── CONTACT ─── */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .contact-info { position: sticky; top: 100px; }
+    .contact-info .badge { margin-bottom: 20px; }
+    .contact-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3vw, 2.5rem);
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .contact-info p {
+      font-size: 1rem;
+      color: var(--neutral-600);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+    .contact-methods { display: flex; flex-direction: column; gap: 16px; }
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px;
+      background: var(--neutral-50);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--neutral-200);
+    }
+    .cm-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-muted);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .cm-icon svg { width: 20px; height: 20px; color: var(--accent); }
+    .cm-text h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 3px; }
+    .cm-text a, .cm-text span { font-size: 0.9rem; color: var(--neutral-700); text-decoration: none; }
+    .cm-text a:hover { color: var(--accent); }
+
+    .contact-form-card {
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-xl);
+      padding: 44px;
+      box-shadow: var(--shadow-lg);
+    }
+    .form-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+    .form-subtitle {
+      font-size: 0.9rem;
+      color: var(--neutral-500);
+      margin-bottom: 32px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--neutral-700);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 13px 16px;
+      border: 1.5px solid var(--neutral-200);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--neutral-900);
+      background: var(--white);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0,168,107,0.12);
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--neutral-400); }
+    .form-submit { width: 100%; justify-content: center; padding: 16px; font-size: 0.95rem; }
+
+    /* ─── FOOTER ─── */
+    .footer { background: var(--primary); padding: 72px 0 0; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+    .footer-brand {}
+    .footer-logo { height: 40px; margin-bottom: 20px; filter: brightness(0) invert(1); }
+    .footer-brand p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 280px;
+    }
+    .footer-socials { display: flex; gap: 10px; }
+    .footer-social {
+      width: 38px;
+      height: 38px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .footer-social:hover { background: var(--accent); color: var(--white); }
+    .footer-social svg { width: 16px; height: 16px; }
+    .footer-col h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 20px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+    .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ─── BACK TO TOP ─── */
+    .back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-decoration: none;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: all 0.3s ease;
+      z-index: 900;
+    }
+    .back-to-top.visible { opacity: 1; transform: translateY(0); }
+    .back-to-top:hover { background: var(--accent); }
+    .back-to-top svg { width: 20px; height: 20px; }
+
+    /* ─── MODAL ─── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,37,64,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 9000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 44px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: var(--shadow-xl);
+      animation: modalIn 0.3s ease;
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.95) translateY(20px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--neutral-500);
+      padding: 4px;
+    }
+    .modal-close:hover { color: var(--neutral-900); }
+    .modal-close svg { width: 22px; height: 22px; }
+    .modal-header { margin-bottom: 24px; }
+    .modal-header h3 { font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+    .modal-header p { font-size: 0.9rem; color: var(--neutral-500); }
+
+    /* ─── ANIMATIONS ─── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up-delay-1 { transition-delay: 0.1s; }
+    .fade-up-delay-2 { transition-delay: 0.2s; }
+    .fade-up-delay-3 { transition-delay: 0.3s; }
+    .fade-up-delay-4 { transition-delay: 0.4s; }
+    .fade-up-delay-5 { transition-delay: 0.5s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1100px) {
+      .hero { flex-direction: column; }
+      .hero-card { display: none; }
+      .industries-grid { grid-template-columns: repeat(2, 1fr); }
+      .industry-card-wide { grid-column: span 2; }
+      .why-us-layout { grid-template-columns: 1fr; gap: 48px; }
+      .why-us-stats-card { position: static; width: auto; margin-top: 24px; }
+      .why-us-img { height: 360px; }
+      .software-layout { grid-template-columns: 1fr; gap: 48px; }
+      .contact-layout { grid-template-columns: 1fr; gap: 48px; }
+      .contact-info { position: static; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-phone { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-top: 1px solid var(--neutral-200);
+        border-bottom: 1px solid var(--neutral-200);
+        padding: 12px 0;
+        box-shadow: var(--shadow-lg);
+        z-index: 999;
+      }
+      .nav-dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        background: var(--neutral-50);
+        padding: 0;
+        display: none;
+      }
+      .nav-links li.open .nav-dropdown { display: block; }
+      .announcement-bar .bar-inner { flex-direction: column; gap: 4px; }
+      .trust-bar-inner { gap: 20px; }
+      .trust-divider { display: none; }
+      .hero { padding: 64px 0; }
+      .section { padding: 64px 0; }
+      .services-grid { grid-template-columns: 1fr; }
+      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .process-grid { grid-template-columns: 1fr; }
+      .process-grid::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .guarantee-grid { grid-template-columns: 1fr 1fr; }
+      .cta-banner { flex-direction: column; padding: 36px; }
+      .cta-banner-actions { align-items: stretch; width: 100%; }
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form-card { padding: 28px; }
+      .hero-stats { gap: 20px; }
+      .hero-stat-divider { display: none; }
+      .why-us-stats-card { grid-template-columns: 1fr 1fr; }
+      .industries-grid { grid-template-columns: 1fr; }
+      .industry-card-wide { grid-column: span 1; }
+      .modal-box { padding: 28px; }
+    }
+    @media (max-width: 480px) {
+      .guarantee-grid { grid-template-columns: 1fr; }
+      .software-logos { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
 </head>
 <body>
-  
-  <section class="menu2 menu cid-sguQOmJJGi" once="menu" id="menu2-8j">
 
-    
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  <div class="container">
+    <div class="bar-inner">
+      <span>Helping businesses startup, grow &amp; succeed <strong>since 1986</strong></span>
+      <div class="bar-contact">
+        <a href="tel:02086538538">020 8653 8538</a>
+        <span style="color: rgba(255,255,255,0.25);">|</span>
+        <a href="mailto:info@accountancygroup.com">info@accountancygroup.com</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <nav class="navbar navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <div class="menu-content-top">
-            <div class="icons-menu">
-                <div class="soc-item">
-                    <a href="https://twitter.com/Ruvas" target="_blank">
-                        <span class="mbr-iconfont socicon-twitter socicon"></span>
-                    </a>
-                </div>
-                <div class="soc-item">
-                    <a href="https://www.facebook.com/AccountancyGroup?ref=hl" target="_blank">
-                        <span class="mbr-iconfont socicon-facebook socicon"></span>
-                    </a>
-                </div>
-                
-                
-                
-                
-            </div>
-            <div class="right-wrap d-flex align-items-center">
-                <div class="info-widget">
-                    <span class="widget-icon mbr-iconfont mdi-communication-business"></span>
-                    <div class="widget-content display-4">
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4">How we can help</p>
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4"><a href="Covid-19.html" class="text-primary" style="font-weight: bold;">Covid 19</a>&nbsp;<strong>&amp; Brexit</strong></p>
-                    </div>
-                </div>
-                <div class="info-widget">
-                    <span class="widget-icon mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
-                    <div class="widget-content display-4">
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4">Need help?</p>
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4"><strong>020 8653 8538</strong><br></p>
-                    </div>
-                </div>
-                <div class="info-widget">
-                    <span class="widget-icon mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
-                    <div class="widget-content display-4">
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4">Email</p>
-                        <p class="mbr-fonts-style mbr-regular widget-title display-4"><strong>info@accountancygroup.com</strong></p>
-                    </div>
-                </div>
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo-with-tagline.svg" alt="Accountancy Group">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="#" onclick="return false;">
+            Your Business
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <ul class="nav-dropdown">
+            <li><a href="Retail-and-wholesale.html">Retail &amp; Wholesale</a></li>
+            <li><a href="Healthcare.html">Healthcare</a></li>
+            <li><a href="Hospitality.html">Hospitality</a></li>
+            <li><a href="Property.html">Property</a></li>
+            <li><a href="Construction.html">Construction</a></li>
+            <li><a href="Contractors.html">Contractors</a></li>
+            <li><a href="Professionals.html">Professional Services</a></li>
+          </ul>
+        </li>
+        <li><a href="Who-we-are.html">Who We Are</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:02086538538" class="nav-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          020 8653 8538
+        </a>
+        <a href="#contact" class="btn btn-primary" style="display:none;" id="navCta">Free Consultation</a>
+        <button class="btn btn-primary" onclick="openModal('consultModal')" style="padding:10px 20px;font-size:0.85rem;">Free Consultation</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div style="display:grid; grid-template-columns: 1fr auto; gap: 80px; align-items: center;">
+      <div class="hero-content">
+        <div class="hero-tag">Trusted Since 1986</div>
+        <h1>Your finances,<br><em>expertly managed</em><br>for growth.</h1>
+        <p>From sole traders to growing businesses — we provide the accountancy, tax, and advisory services you need to thrive. Based in South Norwood, serving London and beyond.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openModal('consultModal')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Book Free Consultation
+          </button>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
         </div>
-        <div class="menu-bottom">
-            <div class="menu-logo">
-                <div class="navbar-brand">
-                    <span class="navbar-logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo-with-tagline.svg" alt="AG logo" style="height: 4rem;">
-                        </a>
-                    </span>
-                    
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown js-float-line" data-app-modern-menu="true"><li class="nav-item">
-                        <a class="nav-link link text-black text-primary display-4" href="index.html">
-                            Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link link dropdown-toggle text-black display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="true">Your Business</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item text-black text-primary display-4" href="Retail-and-wholesale.html">Retail &amp; wholesale</a>
-                            <a class="dropdown-item text-black text-primary display-4" href="Healthcare.html" aria-expanded="false">Healthcare</a>
-                            <a class="dropdown-item text-black text-primary display-4" href="Hospitality.html" aria-expanded="false">Hospitality</a><a class="dropdown-item text-black text-primary display-4" href="Property.html" aria-expanded="false">Property</a><a class="dropdown-item text-black text-primary display-4" href="Construction.html" aria-expanded="false">Construction</a><a class="dropdown-item text-black text-primary display-4" href="Contractors.html" aria-expanded="false">Contractors</a><a class="dropdown-item text-black text-primary display-4" href="Professionals.html" aria-expanded="false">Professional services</a>
-                        </div>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                        <a class="nav-link link text-black text-primary display-4" href="Who-we-are.html" aria-expanded="true">
-                            Who we are</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link text-black display-4" href="#">
-                            Contact us</a>
-                    </li></ul>
-            </div>
-            <div class="menu-content-right">
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success display-4" href="index.html#custom-html-8w">FREE Consultation</a></div>
-            </div>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">38+</div>
+            <div class="hero-stat-label">Years of Experience</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">500+</div>
+            <div class="hero-stat-label">Happy Clients</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">8</div>
+            <div class="hero-stat-label">Specialist Sectors</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">100%</div>
+            <div class="hero-stat-label">Satisfaction Guaranteed</div>
+          </div>
         </div>
-    </nav>
+      </div>
+      <div class="hero-visual" style="position:relative;">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-title">Your Business Health</div>
+            <div class="hero-card-badge">All Good</div>
+          </div>
+          <div class="hero-card-metric">£2.4M</div>
+          <div class="hero-card-sub">Annual Revenue Managed</div>
+          <div class="hero-card-services">
+            <div class="hero-card-service">
+              <div class="hcs-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M16 2l3 3-7 7H9V9l7-7z"/></svg>
+              </div>
+              <span class="hcs-label">Tax Return Filed</span>
+              <span class="hcs-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+            </div>
+            <div class="hero-card-service">
+              <div class="hcs-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              </div>
+              <span class="hcs-label">Payroll On Schedule</span>
+              <span class="hcs-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+            </div>
+            <div class="hero-card-service">
+              <div class="hcs-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+              </div>
+              <span class="hcs-label">VAT Compliant</span>
+              <span class="hcs-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-floating-badge">
+          <div class="hfb-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="hfb-value">100% Risk Free</div>
+            <div class="hfb-label">Money-back guarantee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="header4 cid-s2V9SnoqGp" id="header4-1">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(3, 85, 255);">
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Xero Certified Partner
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        HMRC Compliant
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Same Day Response
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        500+ Satisfied Clients
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        Fixed Monthly Fees
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="align-left container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="wrap d-flex flex-column">
-                    <h1 class="mbr-section-title mbr-fonts-style mbr-bold align-left w-100 display-1"><div><span style="font-size: 4.375rem;">Achieve&nbsp;<br></span><span style="font-size: 4.375rem;">your goals!</span></div></h1>
-                    
-                    <p class="mbr-text align-left mbr-fonts-style mt-4 display-7">Helping businesses like yours startup, <br>grow &amp; succeed&nbsp;since 1986.</p>
-                    <div class="buttons-wrap d-flex mt-4 w-100 justify-content-start">
-                        <div class="mbr-section-btn align-center"><a class="btn btn-lg btn-white-outline display-7" href="#" data-toggle="modal" data-target="#mbr-popup-at">FREE Business Plan Builder</a></div>
-                        
-                    </div>
-                </div>
-            </div>
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge badge-accent">Our Services</span>
+      <h2>Everything your business needs in one place</h2>
+      <p>From day-to-day bookkeeping to complex tax planning, we provide a complete suite of financial services tailored to your industry.</p>
+    </div>
+    <div class="services-grid">
+      <a href="#" class="service-card fade-up fade-up-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M16 2l3 3-7 7H9V9l7-7z"/></svg>
         </div>
-    </div>
-
-    
-    <div>
-        <div class="modalWindow" style="display: none;">
-            <div class="modalWindow-container">
-                <div class="modalWindow-video-container">
-                    <div class="modalWindow-video">
-                        <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://www.youtube.com/watch?v=J21qu_vspfg"></iframe>
-                    </div>
-                    <a class="close" role="button" data-dismiss="modal">
-                        <span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span>
-                        <span class="sr-only">Close</span>
-                    </a>
-                </div>
-            </div>
+        <h3>Accountancy</h3>
+        <p>Preparing accounts and taxation to help you comply with Companies House, HMRC and other bodies' deadlines — on time and at the right cost.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
-    </div>
-    <div class="skew">
-        <div class="inner">
-
+      </a>
+      <a href="#" class="service-card fade-up fade-up-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
+        <h3>Auditing &amp; Taxation</h3>
+        <p>Complete personal tax, business tax, capital gains, inheritance tax, VAT and advance tax planning including property investment.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="#" class="service-card fade-up fade-up-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Bookkeeping</h3>
+        <p>Regular bookkeeping for all types of businesses using Sage, Xero, QuickBooks and more, keeping your records accurate and current.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="#" class="service-card fade-up fade-up-delay-4">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Management Accounting</h3>
+        <p>Knowing how your business performs is critical for smart decisions. We work with your lenders to provide regular management information.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="#" class="service-card fade-up fade-up-delay-5">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Payroll &amp; HR</h3>
+        <p>Prompt, accurate and efficient payroll services with weekly, monthly and bi-weekly payslips plus full RTI compliance reporting to HMRC.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="#" class="service-card fade-up fade-up-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3>Business Consultancy</h3>
+        <p>Years of industry experience helping you solve day-to-day challenges, make major decisions, and plan for buying or selling businesses tax-efficiently.</p>
+        <div class="service-link">
+          Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
     </div>
+  </div>
 </section>
 
-<section class="features2 cid-sdGscZfDCa" id="features2-1">
-
-    
-
-    
-
-    <div class="container">
-        <div class="contents">
-
-            <h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><span style="font-weight: normal;">Meeting your bespoke needs</span></h1>
-            <h3 class="mbr-subtitle mbr-fonts-style mbr-semibold display-5"><span style="font-weight: normal;">Talk to our specialists today</span></h3>
-            
-        </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Retail.html"><img src="assets/images/people-2594681.jpg" alt="Lady on escallator"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Petrol stations, shops</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><span style="font-weight: normal;"><a href="Retail.html" class="text-primary">Retail</a></span><a href="Retail.html" class="text-primary">&nbsp;</a><span style="font-weight: normal;"><a href="Retail.html" class="text-primary">&amp; wholesale</a></span></h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Healthcare.html"><img src="assets/images/running-573762.jpg" alt="Running lady"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Care homes, doctors / dentists</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="Healthcare.html" class="text-primary">Healthcare</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Catering.html"><img src="assets/images/chef-1.png" alt="Chef"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Restaurants, cafes</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5">
-                            <a href="Catering.html" class="text-primary">Catering</a>
-                        </h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            
-            
-            
-        </div>
+<!-- INDUSTRIES -->
+<section class="section section-alt" id="industries">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge badge-accent">Industries We Serve</span>
+      <h2>Sector expertise that makes the difference</h2>
+      <p>We don't believe in one-size-fits-all. Our team has deep, hands-on experience across eight specialist industries.</p>
     </div>
-</section>
-
-<section class="features2 cid-sdGse6S67M" id="features2-2">
-
-    
-
-    
-
-    <div class="container">
-        <div class="contents">
-
-            
-            
-            
+    <div class="industries-grid">
+      <a href="Retail-and-wholesale.html" class="industry-card industry-card-wide fade-up">
+        <img src="assets/images/clem-onojeghuo-wmjtxztw4os-unsplash.jpg" alt="Retail & Wholesale">
+        <div class="industry-overlay">
+          <h3>Retail &amp; Wholesale</h3>
+          <span>Petrol stations, shops &amp; convenience stores</span>
         </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Hospitality.html"><img src="assets/images/bed-4416515.jpg" alt="Hotel Bed"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Hotels, leisure</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="Hospitality.html" class="text-primary">Hospitality</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Contractors.html"><img src="assets/images/coding-1853305.jpg" alt="Computer screen"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">IT, oil &amp; gas</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="Contractors.html" class="text-primary">Contractors</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Construction.html"><img src="assets/images/man1.png" alt="Man cleaning windows"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Building services, support</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5">
-                            <a href="Construction.html" class="text-primary">Construction</a>
-                        </h4>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            
-            
-            
+      </a>
+      <a href="Healthcare.html" class="industry-card fade-up fade-up-delay-1">
+        <img src="assets/images/people-2594681.jpg" alt="Healthcare">
+        <div class="industry-overlay">
+          <h3>Healthcare</h3>
+          <span>Care homes, doctors &amp; dentists</span>
         </div>
+      </a>
+      <a href="Hospitality.html" class="industry-card fade-up fade-up-delay-2">
+        <img src="assets/images/bed-4416515.jpg" alt="Hospitality">
+        <div class="industry-overlay">
+          <h3>Hospitality</h3>
+          <span>Hotels &amp; leisure</span>
+        </div>
+      </a>
+      <a href="Construction.html" class="industry-card fade-up fade-up-delay-1">
+        <img src="assets/images/architecture-3383067.jpg" alt="Construction">
+        <div class="industry-overlay">
+          <h3>Construction</h3>
+          <span>Building services &amp; support</span>
+        </div>
+      </a>
+      <a href="Contractors.html" class="industry-card fade-up fade-up-delay-2">
+        <img src="assets/images/coding-1853305.jpg" alt="Contractors">
+        <div class="industry-overlay">
+          <h3>Contractors</h3>
+          <span>IT, oil &amp; gas contractors</span>
+        </div>
+      </a>
+      <a href="Property.html" class="industry-card fade-up fade-up-delay-3">
+        <img src="assets/images/building-2762237.jpg" alt="Property">
+        <div class="industry-overlay">
+          <h3>Property</h3>
+          <span>Investments, buying &amp; selling</span>
+        </div>
+      </a>
+      <a href="Professionals.html" class="industry-card industry-card-wide fade-up fade-up-delay-1">
+        <img src="assets/images/design-3588214.jpg" alt="Professionals">
+        <div class="industry-overlay">
+          <h3>Professional Services</h3>
+          <span>Architects, estate agents, solicitors &amp; more</span>
+        </div>
+      </a>
     </div>
+  </div>
 </section>
 
-<section class="features2 cid-s2V9TbCQOl" id="features2-3">
-
-    
-
-    
-
-    <div class="container">
-        <div class="contents">
-
-            
-            
-            
+<!-- WHY US -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="why-us-layout">
+      <div class="why-us-visual fade-up">
+        <img src="assets/images/office.jpg" alt="Accountancy Group Team" class="why-us-img">
+        <div class="why-us-stats-card">
+          <div class="mini-stat">
+            <div class="mini-stat-value">38<span>+</span></div>
+            <div class="mini-stat-label">Years in practice</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-value">500<span>+</span></div>
+            <div class="mini-stat-label">Active clients</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-value">8</div>
+            <div class="mini-stat-label">Specialist sectors</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-value">100<span>%</span></div>
+            <div class="mini-stat-label">Satisfaction guarantee</div>
+          </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Professionals.html"><img src="assets/images/building-2762237.jpg" alt="Builders"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Architects, Estate agents, Solicitors</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="Professionals.html" class="text-primary">Professionals</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
+      </div>
+      <div class="why-us-content fade-up fade-up-delay-2">
+        <span class="badge badge-accent">Why Choose Us</span>
+        <h2>Business advice that actually works</h2>
+        <p>Whether you're a new startup or an established growing business, we provide the expert guidance and practical support you need at every stage of your journey.</p>
+        <div class="why-points">
+          <div class="why-point">
+            <div class="wp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="Property.html"><img src="assets/images/architecture-3383067.jpg" alt="Row of houses"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Investments, buying &amp; selling</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="Property.html" class="text-primary">Property</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
+            <div class="wp-text">
+              <h4>Fixed, transparent fees</h4>
+              <p>No surprise bills. You know exactly what you'll pay every month before we start.</p>
             </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <a href="index.html#form2-i"><img src="assets/images/avoid-penalties.png" alt="Personal Tax returns deadline"></a>
-                    </div>
-                    <div class="card-box align-left">
-                        <h5 class="card-subtitle align-left mbr-fonts-style display-4">Let's get started</h5>
-                        <h4 class="mbr-fonts-style mbr-semibold align-left card-title display-5"><a href="index.html#form2-i" class="text-primary">Don't delay</a></h4>
-                        
-
-                        
-                    </div>
-                </div>
+          </div>
+          <div class="why-point">
+            <div class="wp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-
-            
-            
-            
+            <div class="wp-text">
+              <h4>Same-day responses</h4>
+              <p>Emails answered the same day if received before 3pm. Calls returned the same day.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="wp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="wp-text">
+              <h4>100% risk-free guarantee</h4>
+              <p>Not satisfied? We'll refund or not charge for the part of our service you're unhappy with.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="wp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="wp-text">
+              <h4>Dedicated team for your sector</h4>
+              <p>You'll work with specialists who already understand your industry's unique challenges.</p>
+            </div>
+          </div>
         </div>
+        <button class="btn btn-primary" onclick="openModal('consultModal')">Get Your Free Consultation</button>
+      </div>
     </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="image3 cid-sWuCZTzuVu" id="image03-bn">
-    
-
-    
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <div class="image-wrapper">
-                    <a href="https://www.trustpilot.com/review/accountancygroup.com?fbclid=IwAR1Dkj5lCP7j8cIstby6NLqJWbgEcA5ccf0iOwp6TsobdoPT8ipGJ97KWx4" target="_blank"><img src="assets/images/accountancy-trustpilot-3.png" alt=""></a>
-                    
-                </div>
-            </div>
-        </div>
+<!-- PROCESS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge badge-accent">How It Works</span>
+      <h2>Getting started is simple</h2>
+      <p>Switch to us in three easy steps — no disruption, no stress, just better accounting from day one.</p>
     </div>
-</section>
-
-<section class="carousel slide testimonials-slider extTestimonials cid-sgUbjW46SM" data-interval="false" id="extTestimonials16-8v">
-    
-    
-
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(2, 57, 182);">
+    <div class="process-grid">
+      <div class="process-step active fade-up fade-up-delay-1">
+        <div class="process-number">01</div>
+        <h3>Free Consultation</h3>
+        <p>Book a free, no-obligation consultation with one of our experts — in person, by phone, or via Zoom at a time that suits you.</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-2">
+        <div class="process-number">02</div>
+        <h3>Get Expert Advice</h3>
+        <p>We'll review your current situation, identify opportunities, and present a clear plan tailored to your business needs.</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-3">
+        <div class="process-number">03</div>
+        <h3>Switch to Us</h3>
+        <p>We handle the entire transition — contacting your previous accountant, migrating records, and getting you set up seamlessly.</p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="container text-center">
-        
-        
-
-        
-
-        <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
-            <div class="carousel-inner">
-                
-            <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">                          
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><strong>Catering Consultants &amp; International Recruitment Specialists for Hotel Industry</strong><div>Team at Accountancy Group has assisted us with compliance with all the authorities and also with advise on tax planning and business structures. We feel they would add value to any business looking for support and advice.</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">Paolo &amp; Thomas Unitas</span></h4>                   
-                            
-                        </div>
-
-                        <div class="col-md-4 d-none d-md-block">
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><strong>Fast growing Environmental Services Business</strong><div>We started as a new business in 2008. The services and support provided by Accountancy Group has been excellent.</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">Clearup Solutions</span></h4>       
-                                        
-                        </div>
-                        
-                        <div class="col-md-4 d-none d-md-block">
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><strong>Independent IT Contractor</strong><div>I have been a client of Accountancy Group since 2011 and find them that their specialist knowledge as Contractors Accountants has helped me a great deal. I recommend them well.</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">Rajesh Appana&nbsp;</span></h4>
-                                                
-                        </div>
-                    </div>
-                </div><div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">                          
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><div><strong>Group of petrol &amp; convenience&nbsp;stores</strong><br>We have been with Accountancy group for over 30yrs and highly recommend them for their professional &amp; prompt services in accountancy, taxation &amp; consultancy services</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">VS &amp; JS Group</span></h4>                   
-                            
-                        </div>
-
-                        <div class="col-md-4 d-none d-md-block">
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><div><strong>Hotel, retail &amp; care homes group<br></strong>We have varied demands to meet in our business and the support Accountancy Group provides is invaluable to us.</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">S-Group of Businesses</span></h4>       
-                                        
-                        </div>
-                        
-                        <div class="col-md-4 d-none d-md-block">
-                            <div class="mbr-text mbr-fonts-style align-left display-4"><div><strong>Builders<br></strong>I run a building services business and the services I use with Accountancy Group has helped me manage and grow my business from a sole trader to a successful growing LTD company. I recommend them well.</div></div>
-                            <h4 class="mbr-fonts-style signature mbr-bold pt-3 align-left display-7"><span style="font-weight: normal;">Z-2-Z Builders</span></h4>
-                                                
-                        </div>
-                    </div>
-                </div></div>
-
-            <div class="carousel-controls">
-                <a class="carousel-control-prev" role="button" data-slide="prev">
-                  <span aria-hidden="true" class="mbri-left mbr-iconfont"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                
-                <a class="carousel-control-next" role="button" data-slide="next">
-                  <span aria-hidden="true" class="mbri-right mbr-iconfont"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge badge-accent">Client Stories</span>
+      <h2>Trusted by businesses across London</h2>
+      <p>Don't just take our word for it — here's what our clients say about working with Accountancy Group.</p>
     </div>
-</section>
-
-<section class="content1 cid-sXawPeeMIy" id="content2-bs">
-
-    
-
-    
-
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-text col-lg-12">
-                <p class="mbr-text mbr-fonts-style align-left mb-0 display-5"><strong>
-                    Certified by Xero means you get better deals </strong><br><strong>and faster turnarounds</strong></p>
-            </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card featured fade-up fade-up-delay-1">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         </div>
+        <p class="testimonial-text">"Accountancy Group have been handling our finances for over 30 years. Their team understands our business inside out. We trust them completely with every aspect of our financial affairs."</p>
+        <div class="testimonial-author">
+          <div class="ta-avatar">VS</div>
+          <div>
+            <div class="ta-name">VS &amp; JS Group</div>
+            <div class="ta-role">Petrol &amp; convenience stores group</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p class="testimonial-text">"As a fast-growing environmental services business, we needed accountants who could keep pace with us. Accountancy Group have been invaluable since 2008."</p>
+        <div class="testimonial-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#0A2540,#00A86B);">CU</div>
+          <div>
+            <div class="ta-name">Clearup Solutions</div>
+            <div class="ta-role">Environmental Services, client since 2008</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-3">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p class="testimonial-text">"They helped me grow from a sole trader to a successful limited company. Their expertise and commitment to my business has been second to none."</p>
+        <div class="testimonial-author">
+          <div class="ta-avatar" style="background:linear-gradient(135deg,#1A3D6B,#00A86B);">ZB</div>
+          <div>
+            <div class="ta-name">Z-2-Z Builders</div>
+            <div class="ta-role">Construction, sole trader to Ltd company</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="image1 cleanm4_image1 cid-st2oRUgM69" id="image1-bg">
-
-	
-
-	<figure class="mbr-figure container">
-		<div class="image-block" style="width: 48%;">
-			<img src="assets/images/xero-logos.png" alt="">
-		</div>
-	</figure>
-</section>
-
-<section class="extContacts1 cid-shWlD9FHio" id="extContacts1-as">
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center mbr-white">
-            <div class="card p-3 col-12 col-md-8 col-lg-4">
-                <div class="card-wrapper card1 align-left">
-                    <div class="card-ico pb-4">
-                        <span class="mbr-iconfont card-icon mobi-mbri-phone mobi-mbri" style="color: rgb(2, 57, 182); fill: rgb(2, 57, 182);"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">Call us</h4>
-                        <div class="line-wrap">
-                            <div class="line"></div>
-                        </div>
-                        <p class="mbr-text mbr-fonts-style display-4">Call us on <strong>020 8653 8538</strong><br>&nbsp;to arrange a consultation<br></p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-8 col-lg-4">
-                <div class="card-wrapper card2 align-left">
-                    <div class="card-ico pb-4 align-left">
-                        <a href="index.html#custom-html-8w"><span class="mbr-iconfont card-icon icon2 mobi-mbri-video mobi-mbri" style="color: rgb(2, 57, 182); fill: rgb(2, 57, 182);"></span></a>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">Video call</h4>
-                        <div class="line-wrap">
-                            <div class="line line2"></div>
-                        </div>
-                        <p class="mbr-text mbr-fonts-style display-4"><a href="index.html#custom-html-8w" class="text-black">Arrange a free Zoom consultation with one of our experts</a><br></p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-8 col-lg-4">
-                <div class="card-wrapper card3 align-left">
-                    <div class="card-ico pb-4 align-left">
-                        <span class="mbr-iconfont card-icon mobi-mbri-users mobi-mbri" style="color: rgb(2, 57, 182); fill: rgb(2, 57, 182);"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">Visit us</h4>
-                        <div class="line-wrap">
-                            <div class="line"></div>
-                        </div>
-                        <p class="mbr-text mbr-fonts-style display-4">Pop into our office when it's safe to do so for a meeting in person<br></p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- GUARANTEE -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge badge-light">Our Guarantees</span>
+      <h2>100% Risk-Free Service</h2>
+      <p>If at any time you're not completely satisfied with our work, we'll resolve it or refund the part of the service you're unhappy with. No questions asked.</p>
     </div>
-</section>
-
-<section class="image1 cleanm4_image1 cid-sXawxHbdQx" id="image1-br">
-
-	
-
-	<figure class="mbr-figure container">
-		<div class="image-block" style="width: 100%;">
-			<a href="#" data-toggle="modal" data-target="#mbr-popup-bi" data-bs-toggle="modal" data-bs-target="#mbr-popup-bi"><img src="assets/images/fortnum-2.png" alt=""></a>
-		</div>
-	</figure>
-</section>
-
-<section class="content4 cid-shDsBF36nJ" id="content4-a2">
-
-    
-
-    
-    <div class="container">
-        <div class="row main-row">
-            <div class="col-12">
-                
-                <h2 class="mbr-fonts-style mbr-section-title mbr-bold display-2"><span style="font-weight: normal;">100% Risk free guarantees</span></h2>
-            </div>
-            <div class="col-lg-6 mt-4">
-                <p class="mbr-fonts-style mbr-text mbr-regular display-7"><strong>If at any time you are not completely satisfied with our work please discuss it with us. If we cant resolve it we are happy to refund or not charge you for the part of the service you are not happy.</strong><br></p>
-                
-            </div>
-            <div class="col-lg-6 mt-4">
-                <div class="mbr-list mbr-fonts-style display-4">
-                    <ul class="list">
-                        <li><span style="font-size: 1.375rem;">Emails replied same day if received by 3pm</span></li><li><span style="font-size: 1.375rem;">Telephone calls answered on the day</span></li><li><span style="font-size: 1.375rem;">Letters answered within 2 days</span></li><li><span style="font-size: 1.375rem;">Accounts done in 30days if we have all information</span></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="guarantee-grid">
+      <div class="guarantee-card fade-up fade-up-delay-1">
+        <div class="guarantee-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
         </div>
+        <h3>Same-Day Email Response</h3>
+        <p>All emails received before 3pm will be replied to the same day — always.</p>
+      </div>
+      <div class="guarantee-card fade-up fade-up-delay-2">
+        <div class="guarantee-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <h3>Calls Answered Same Day</h3>
+        <p>We'll always return your phone calls the same day — no endless voicemail loops.</p>
+      </div>
+      <div class="guarantee-card fade-up fade-up-delay-3">
+        <div class="guarantee-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Letters Within 2 Days</h3>
+        <p>Written correspondence is always addressed and responded to within two business days.</p>
+      </div>
+      <div class="guarantee-card fade-up fade-up-delay-4">
+        <div class="guarantee-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Accounts in 30 Days</h3>
+        <p>Your accounts will be prepared within 30 days of us receiving all the information we need.</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="extFeatures cid-seQwYt47s0" id="extFeatures3-50">
-    
-    
-
-    
- <!--    <div mbr-class="{'container':cardsAmount<5,'container-fluid':cardsAmount>4}"> -->
-    <div class="container-fluid">
-        <h2 class="align-center mbr-fonts-style mbr-section-title display-2">Switch accounts to us <br>in 3 easy steps!</h2>
-        <div class="underline align-center">
-            <div class="line"></div>
+<!-- SOFTWARE -->
+<section class="section">
+  <div class="container">
+    <div class="software-layout">
+      <div class="software-content fade-up">
+        <span class="badge badge-accent">Cloud Accounting</span>
+        <h2>Powered by the best accounting software</h2>
+        <p>We're certified partners with all the leading cloud accounting platforms. Get real-time visibility into your business performance from anywhere.</p>
+        <p>As a Xero Certified Partner, we can get you <strong>up to 3 months free cloud accounting software</strong> when you switch to us.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;">
+          <button class="btn btn-primary" onclick="openModal('consultModal')">Claim Free Software</button>
+          <a href="#contact" class="btn btn-ghost">Learn More</a>
         </div>
-        <div class="row justify-content-center content-row pt-5">
-            <div class="card p-3 col-md-6 col-lg-4 col-xl-2">
-                <div class="card-img pb-5">
-                    <div class="step">
-                        <span class="mbr-fonts-style display-7"><strong>1</strong></span>
-                    </div>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title mbr-fonts-style display-7">FREE consultation</h4>
-                    
-                </div>
-            </div>
-
-            <div class="card p-3 col-md-6 col-lg-4 col-xl-2">
-                <div class="card-img pb-5">
-                    <div class="step">
-                        <span class="mbr-fonts-style display-7"><strong>2</strong></span>
-                    </div>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title mbr-fonts-style display-7">Get advice</h4>
-                    
-                </div>
-            </div>
-
-            <div class="card p-3 col-md-6 col-lg-4 col-xl-2">
-                <div class="card-img pb-5">
-                    <div class="step">
-                        <span class="mbr-fonts-style display-7"><strong>3</strong></span>
-                    </div>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title mbr-fonts-style display-7">Switch to us<br></h4>
-                    
-                </div>
-            </div>
-
-            
-
-            
-
-            
-
+      </div>
+      <div class="software-logos fade-up fade-up-delay-2">
+        <div class="software-logo-card">
+          <span style="color:#13B5EA;font-size:1.2rem;">Xero</span>
         </div>
+        <div class="software-logo-card">
+          <span style="color:#2CA01C;">QuickBooks</span>
+        </div>
+        <div class="software-logo-card">
+          <span style="color:#00B050;">Sage</span>
+        </div>
+        <div class="software-logo-card" style="grid-column:1/4;aspect-ratio:auto;padding:20px 24px;">
+          <div style="display:flex;align-items:center;gap:16px;width:100%;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#00A86B" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <div style="font-size:0.85rem;font-weight:700;color:#0A2540;">Xero Certified Partner</div>
+              <div style="font-size:0.78rem;color:#6C757D;">Better deals, faster turnarounds for your business</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="title2 cid-s2V9U6S5wm" id="title2-5">
-
-    
-
-    
-
-    <div class="align-center container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="content-inner d-flex justify-content-between flex-wrap align-center">
-                    <div class="left-content">
-                        <h1 class="mbr-fonts-style mbr-section-title mbr-bold align-left display-2"><span style="font-weight: normal;">Take action today</span></h1>
-                        <p class="mbr-text align-left mbr-fonts-style display-7">Get upto 3 months <strong>FREE cloud accounting software</strong><br>* Subject to contract<br></p>
-                    </div>
-                    <div class="right-content">
-                        <p class="mbr-text align-center mbr-fonts-style display-4"></p>
-                        <div class="buttons-wrap w-100">
-                            <div class="mbr-section-btn align-center"><a class="btn btn-md btn-success display-7" href="index.html#custom-html-8w">FREE Consultation</a></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<!-- CTA BANNER -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <div class="cta-banner-text">
+        <span class="badge">Limited Offer</span>
+        <h2>Get 3 months free cloud accounting — refer a friend and earn a gift</h2>
+        <p>Refer a business to us and they get 3 months free Xero. You'll receive a Fortnum &amp; Mason £30 gift hamper as our thank you.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <button class="btn btn-white" onclick="openModal('consultModal')">Book Free Consultation</button>
+        <span class="cta-small-text">No commitment required</span>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="header3 cid-s2V9SVDk5H" id="header3-2">
-
-    
-
-    
-    <div class="container">
-        <div class="row align-items-center content-row">
-            <div class="col-lg-4 wrap-block">
-                <div class="contents">
-                    
-                    <h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><span style="font-weight: normal;">Business advice, that works</span></h1>
-                    
-                    <h4 class="mbr-text mbr-fonts-style mbr-regular mb-4 display-7">Whether you are a new startup or an already growing business, you can talk to us for guidance &amp; advice.</h4>
-                    <div class="mbr-section-btn align-left"><a class="btn btn-lg btn-success display-7" href="index.html#custom-html-8w">FREE Consultation</a></div>
-                </div>
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-info fade-up">
+        <span class="badge badge-accent">Get In Touch</span>
+        <h2>Ready to take control of your finances?</h2>
+        <p>Book a free, no-obligation consultation and find out how we can help your business thrive. No pressure, just expert advice.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="cm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.49a16 16 0 006.04 6.04l1.57-1.35a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-            <div class="col-lg-4">
-                <div class="image-wrap mb-5">
-                    <img src="assets/images/office-building-1.jpeg" alt="Office" title="">
-                </div>
+            <div class="cm-text">
+              <h4>Call us</h4>
+              <a href="tel:02086538538">020 8653 8538</a>
             </div>
-            <div class="col-lg-4 cards">
-                <div class="cards-wrap d-flex">
-                    <div class="row-item">
-                        <div class="wrapper">
-                            
-                            <h4 class="mbr-fonts-style mbr-card-title mbr-semibold align-left pb-2 display-7">Help grow your business</h4>
-
-                            <p class="mbr-text mbr-fonts-style mbr-regular align-left display-7">Providing right guidance and advice on time to save money and help your business succeed</p>
-                        </div>
-                    </div>
-
-                    <div class="row-item">
-                        <div class="wrapper">
-                            
-                            <h4 class="mbr-fonts-style mbr-card-title mbr-semibold align-left pb-2 display-7">Achieve goals</h4>
-
-                            <p class="mbr-text mbr-fonts-style mbr-regular align-left display-7">Achieving your goals and aims is our wish too</p>
-                        </div>
-                    </div>
-
-                    <div class="row-item">
-                        <div class="wrapper">
-                            
-                            <h4 class="mbr-fonts-style mbr-card-title mbr-semibold align-left pb-2 display-7">Support you at every step</h4>
-                            <p class="mbr-text mbr-fonts-style mbr-regular align-left display-7">We will help you succeed, whatever the stage you are in<br></p>
-                        </div>
-                    </div>
-
-                    
-                </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
             </div>
+            <div class="cm-text">
+              <h4>Email us</h4>
+              <a href="mailto:info@accountancygroup.com">info@accountancygroup.com</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="cm-text">
+              <h4>Visit us</h4>
+              <span>SVS House, Oliver Grove,<br>South Norwood, London SE25 6EJ</span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="contact-form-card fade-up fade-up-delay-2">
+        <div class="form-title">Send us a message</div>
+        <div class="form-subtitle">We'll get back to you within one business day.</div>
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@yourcompany.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="020 XXXX XXXX">
+          </div>
+          <div class="form-group">
+            <label for="service">Service of Interest</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <option>Accountancy</option>
+              <option>Auditing &amp; Taxation</option>
+              <option>Bookkeeping</option>
+              <option>Payroll &amp; HR</option>
+              <option>Management Accounting</option>
+              <option>Business Consultancy</option>
+              <option>VAT</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us a bit about your business and how we can help..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="features6 cid-s2V9TywmmC" id="features6-4">
-
-    
-
-    
-
-    <div class="container">
-        <div class="contents">
-            <h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2"><span style="font-weight: normal;">Supporting you</span></h1>
-            <h3 class="mbr-subtitle mbr-fonts-style mbr-semibold display-7"><span style="font-weight: normal;">We specialise in providing </span>cloud<span style="font-weight: normal;"> </span>accounting solutions Xero, QuickBook &amp; Sage<span style="font-weight: normal;"> <br><br>to help you keep your accounts online and provide real time business performance <br><br>information &amp; prompt&nbsp;compliance</span></h3>
-            
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-with-tagline.svg" alt="Accountancy Group" class="footer-logo">
+        <p>Expert accountants helping businesses in London startup, grow and succeed since 1986. Based in South Norwood, serving clients across the UK.</p>
+        <div class="footer-socials">
+          <a href="https://twitter.com/Ruvas" class="footer-social" target="_blank" rel="noopener" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="https://facebook.com/AccountancyGroup" class="footer-social" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
         </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-gift"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">Accountancy</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">Preparing accounts &amp; taxation to help you comply with companies house, HMRC &amp; other public bodies' deadlines and statutory requirements - on time &amp; at the right cost</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-sun2"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title pb-3 align-center mbr-fonts-style mbr-bold display-7">Auditing &amp; Taxation</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">Complete taxation and persoanl tax, business tax, capital gains tax, inheritance tax, VAT and much more on an ongoing basis. Advance tax planning in property</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-clock"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">
-                            Book keeping</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">Regular book keeping for all types of businesses, updating all your records on a regular basis at a competitive fee. We can help you keep your bookkeeping up to date using software like - Sage, Xero, Quickbooks etc</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-map-pin"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">Audit</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">We provide auditing services to check your internal records and provide statutory audit services through our Associate registered auditor</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-hot-cup"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">Management accounting</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">Knowing how your business performs is very important to make wise decisions. We can work with your lenders and banks to provide regular management information</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-setting"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">Payroll</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">We provide prompt , accurate &amp; efficient payroll &amp; HR services. We can provide weekly, monthly 2 weekly payslips and all compliance reports through online RTI services to meet HMRC requirements<br></p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Accountancy</a></li>
+          <li><a href="#">Auditing &amp; Taxation</a></li>
+          <li><a href="#">Bookkeeping</a></li>
+          <li><a href="#">Payroll &amp; HR</a></li>
+          <li><a href="#">VAT</a></li>
+          <li><a href="#">Business Planning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="Retail-and-wholesale.html">Retail &amp; Wholesale</a></li>
+          <li><a href="Healthcare.html">Healthcare</a></li>
+          <li><a href="Hospitality.html">Hospitality</a></li>
+          <li><a href="Property.html">Property</a></li>
+          <li><a href="Construction.html">Construction</a></li>
+          <li><a href="Contractors.html">Contractors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="Who-we-are.html">Who We Are</a></li>
+          <li><a href="Privacy.html">Privacy Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="Covid-19.html">Covid-19 Support</a></li>
+          <li><a href="Tax-assessment.html">Tax Assessment</a></li>
+        </ul>
+      </div>
     </div>
-</section>
-
-<section class="features6 cid-seP8VbSOSg" id="features6-4w">
-
-    
-
-    
-
-    <div class="container">
-        <div class="contents">
-            
-            
-            
-        </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-gift"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">VAT</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">VAT rules are becoming more and more complex because of changes in EU rules etc. We can help you with HMRC requirements and ensure up to date VAT.&nbsp;</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-sun2"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title pb-3 align-center mbr-fonts-style mbr-bold display-7">Business planning</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">We can provide business planning using accountancy and management information along with your input &amp; understanding of business information</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbri-clock"></span>
-                    </div>
-                    <div class="card-box align-center">
-                        <h4 class="card-title align-center pb-3 mbr-fonts-style mbr-bold display-7">Consultancy</h4>
-                        <p class="mbr-text align-center mbr-fonts-style mbr-regular display-4">Our consultancy services are based on years of experience in understanding your business. We can help you find solutions to day to day challenges and make major decisions such as buying &amp; selling businesses tax efficiently.</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            
-            
-            
-        </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Accountancy Group. All rights reserved. | <a href="Privacy.html">Privacy Policy</a></p>
+      <p>SVS House, Oliver Grove, South Norwood, London SE25 6EJ</p>
     </div>
-</section>
+  </div>
+</footer>
 
-<div id="custom-html-8w"><!-- Type valid HTML here -->
+<!-- BACK TO TOP -->
+<a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</a>
 
-<div>
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/info-21052/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
-</div></div>
-
-<section class="accordion1 cid-sfLZPLgXK0" id="accordion1-53">
-
-    
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="img-wrap mb-5">
-                    <img src="assets/images/design-3588214.jpg" alt="" title="">
-                </div>
-            </div>
-            <div class="col-lg-6 content">
-                
-                <h2 class="mbr-fonts-style mbr-section-title align-left mbr-bold display-2"><span style="font-weight: normal;">Common questions</span></h2>
-                
-                <div id="bootstrap-accordion_16" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed text-black pr-5" data-toggle="collapse" data-core="" href="#collapse1_16" aria-expanded="false" aria-controls="collapse1">
-
-                                <h4 class="mbr-fonts-style mbr-section-subtitle mbr-semibold display-7"><span style="font-weight: normal;">How do you charge for services?
-                                    </span><span class="toggle-icon inactive sign mbr-iconfont"></span>
-                                </h4>
-
-                            </a>
-                        </div>
-                        <div id="collapse1_16" class="panel-collapse noScroll collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_16">
-                            <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text mbr-regular panel-text pr-5 display-4">Our fees are based on your requirements. We quote fixed fees in advance to avoid any surprises. Our fees are reasonable which take into account prompt and efficient delivery of services tailored to you and your business needs.&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingTwo">
-                            <a role="button" class="collapsed panel-title text-black pr-5" data-toggle="collapse" data-core="" href="#collapse2_16" aria-expanded="false" aria-controls="collapse2">
-                                <h4 class="mbr-fonts-style mbr-section-subtitle mbr-semibold display-7">
-                                    <span class="toggle-icon inactive sign mbr-iconfont"></span><span style="font-weight: normal;">FREE appointments?</span></h4>
-                            </a>
-
-                        </div>
-                        <div id="collapse2_16" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_16">
-                            <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text mbr-regular panel-text pr-5 display-4">Appointments can be made to meet in person or telephone calls to suit your convenience. You can contact us on - info@accountancygroup.com or on 020 8653 8538 or book an appointment via the website.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingThree">
-                            <a role="button" class="collapsed text-black panel-title pr-5" data-toggle="collapse" data-core="" href="#collapse3_16" aria-expanded="false" aria-controls="collapse3">
-                                <h4 class="mbr-fonts-style mbr-section-subtitle mbr-semibold display-7">
-                                    <span class="toggle-icon inactive sign mbr-iconfont"></span><span style="font-weight: normal;">FREE software and training?
-                                </span></h4>
-                            </a>
-                        </div>
-                        <div id="collapse3_16" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_16">
-                            <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text mbr-regular panel-text pr-5 display-4">For regular accounting clients we can provide free software training and guidance to help you comply and monitor the performance of your business in real time and on a regular basis.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingFour">
-                            <a role="button" class="collapsed panel-title text-black pr-5" data-toggle="collapse" data-core="" href="#collapse4_16" aria-expanded="false" aria-controls="collapse4">
-                                <h4 class="mbr-fonts-style mbr-section-subtitle mbr-semibold display-7">
-                                    <span class="toggle-icon inactive sign mbr-iconfont"></span><span style="font-weight: normal;">Support &amp; assistance other than accounting?</span></h4>
-                            </a>
-                        </div>
-                        <div id="collapse4_16" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_16">
-                            <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text mbr-regular panel-text pr-5 display-4">We can help you structure your business efficiently so it meets your aims and goals. We cover business structure, salary, dividend planning, VAT, PAYE compliance, regular tax planning, management accounts and business planning. We aim to provide a holistic solutions to your needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </div>
-            </div>
-        </div>
+<!-- CONSULTATION MODAL -->
+<div class="modal-overlay" id="consultModal">
+  <div class="modal-box" style="position:relative;">
+    <button class="modal-close" onclick="closeModal('consultModal')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-header">
+      <h3>Book Your Free Consultation</h3>
+      <p>No obligation. No sales pressure. Just expert advice.</p>
     </div>
-    
-</section>
-
-<section class="form2 cid-s2V9Yi1kG2" id="form2-i">
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mb-5 text-content">
-
-                
-                <h2 class="mbr-section-title align-left mbr-bold mbr-fonts-style display-2"><span style="font-weight: normal;">Get in touch</span></h2>
-                
-                <div class="list-block mt-5">
-                    <div class="card-img pb-3">
-                        <span class="mbri-mobile mbr-iconfont"></span>
-                    </div>
-                    <h4 class="list-item-title mbr-fonts-style mbr-regular display-7">020 8653 8538</h4>
-                    
-                </div>
-                <div class="list-block">
-                    <div class="card-img pb-3">
-                        <span class="mbri-pin mbr-iconfont"></span>
-                    </div>
-                    <h4 class="list-item-title mbr-fonts-style mbr-regular display-7">SVS House, Oliver Grove<div><br></div><div>South Norwood, London SE25 6EJ</div></h4>
-                    
-                </div>
-                <div class="list-block last">
-                    <div class="card-img pb-3">
-                        <span class="mbri-letter mbr-iconfont"></span>
-                    </div>
-                    <h4 class="list-item-title mbr-fonts-style mbr-regular display-7">
-                        info@accountancygroup.com</h4>
-                    
-                </div>
-                
-            </div>
-            <div class="col-lg-6 mx-auto mbr-form" data-form-type="formoid">
-<!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="AG form"><input type="hidden" name="email" data-form-email="true" value="VZKoju8pbOUAeqnIrr3JaYDqLHhZfJ42x8uIwU9iO+y6OjtMYH8PSOmwPgJZPYIwu0WMeW7MOa9P0vIvtZdg9+gzKo3hyBEpldDUIunes9smaJ2D1s6NWyFXXUiG74Fv.tf2J3kyWuoc50cbWaDwoYbBv1Ay9zS2n/BHs8aMc9isBTf2QAhIIrl0GMilCi1DEvwGeLWG3Q9VBLadFnOWrkBc1NX2kGDCGPk6opHo405pQrqPuOZSCYLvCzCNYZJAy">
-<div class="form-row">
-<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thank you! We will be in touch shortly.</div>
-<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+    <form onsubmit="handleModalSubmit(event)">
+      <div class="form-group">
+        <label for="mName">Your Name</label>
+        <input type="text" id="mName" placeholder="John Smith" required>
+      </div>
+      <div class="form-group">
+        <label for="mEmail">Email Address</label>
+        <input type="email" id="mEmail" placeholder="john@company.com" required>
+      </div>
+      <div class="form-group">
+        <label for="mPhone">Phone Number</label>
+        <input type="tel" id="mPhone" placeholder="020 XXXX XXXX">
+      </div>
+      <div class="form-group">
+        <label for="mBusiness">Business Type</label>
+        <input type="text" id="mBusiness" placeholder="e.g. Retail shop, IT contractor...">
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">
+        Book Free Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </form>
+  </div>
 </div>
-<div class="dragArea form-row">
-<div class="col-lg-6 form-group" data-for="first-name">
-<input type="text" name="first-name" placeholder="Your Name*" data-form-field="first-name" required="required" class="form-control display-4" value="" id="first-name-form2-i">
-</div>
-<div class="col-lg-6 form-group" data-for="email">
-<input type="email" name="email" placeholder="Your Email*" data-form-field="email" required="required" class="form-control display-4" value="" id="email-form2-i">
-</div>
-<div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group">
-<input type="tel" name="phone" placeholder="Your telephone number" data-form-field="phone" class="form-control display-7" value="" id="phone-form2-i">
-</div>
-<div data-for="message" class="col-lg-12 form-group">
-<textarea name="message" placeholder="Your Comment" data-form-field="message" class="form-control display-4" id="message-form2-i"></textarea>
-</div>
-<div class="col-lg-12 mbr-section-btn">
-<button type="submit" class="btn btn-success btn-form btn-lg display-4">Send message</button>
-</div>
-</div>
-</form><!--Formbuilder Form-->
-</div>
-        </div>
-    </div>
-</section>
 
-<div id="custom-html-4j"><!-- Type valid HTML here -->
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+    document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+  });
 
-<div>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.2551749788176!2d-0.07918208404939583!3d51.39836587961745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760124bec86a13%3A0xdcbc8f030c5ca84e!2sAccountancy%20Group%20Plc!5e0!3m2!1sen!2suk!4v1603050927076!5m2!1sen!2suk" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div></div>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 
-<section class="extFooter cid-sdGCVf4DjI" id="extFooter26-8">
+  // Dropdown on mobile
+  navLinks.querySelectorAll('li > a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const li = link.parentElement;
+      if (li.querySelector('.nav-dropdown') && window.innerWidth < 768) {
+        e.preventDefault();
+        li.classList.toggle('open');
+      }
+    });
+  });
 
-    
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    <div class="container">
-        <div class="row justify-content-center">
+  // Modal
+  function openModal(id) {
+    document.getElementById(id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal(overlay.id);
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
+  });
 
-            <div class="col-lg-6 col-md-8 col-sm-12">
-
-                
-
-                
-
-                
-
-
-
-                <div class="social-list align-center py-4">
-                    <div class="soc-item">
-                        
-                            <a href="https://twitter.com/Ruvas" target="_blank"><div class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon" style="color: rgb(255, 124, 0); fill: rgb(255, 124, 0);" media-simple="true"></div></a>
-                        
-                    </div>
-                    <div class="soc-item">
-                        
-                            <a href="https://www.facebook.com/AccountancyGroup" target="_blank"><div class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(255, 124, 0); fill: rgb(255, 124, 0);" media-simple="true"></div></a>
-                        
-                    </div>
-                    
-                    
-                    
-                    
-                </div>
-                <p class="mbr-text mbr-normal py-2 links mbr-fonts-style display-4">Copyright © 2022 - 23 - Accountancy Group&nbsp; |&nbsp; <a href="Privacy.html" class="text-primary">Privacy</a><a href="Privacy.html" class="text-primary"><br></a><br>All Rights Reserved. Site by - <a href="https://www.trafik.design" class="text-warning text-primary" target="_blank">Trafik.Design</a></p>
-
-            </div>
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-
-</section>
-
-<div class="modal mbr-popup cid-skL0gB3btl fade" tabindex="-1" role="dialog" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-at" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header pb-0">
-                    <h5 class="modal-title mbr-fonts-style display-5"><strong>FREE Business Plan builder</strong></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
-                            <path d="M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        If you are starting off in a new business journey or looking to speak to your bank for funding your dream project - you will need this tool to get you a <strong>headstart</strong>.</p>
-
-                    <div>
-                        
-                            
-
-                            <div class="form-wrapper" data-form-type="formoid">
-<!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Business plan form"><input type="hidden" name="email" data-form-email="true" value="JWGkwJGFIwytVRbo0AhH+neCi/q4wYeRgIRs0QfjdSadj8HVfFvKpoJWnQHw7uKa8CqYuxExvNLAaVmeOqBtbuHvxRO/O0yauX+0INUTEfPUoanz98mLdDtJmFr8fIxH.zAXgQPmE7o8VEg+J7LYceIQeeFOxY+87LQukY4zi+9W2U3sQ4031jW+CWmDl8g6yhluB7yZwkyLYWrBpy9OLIeEKP5C25oz0r1pjxv7fZeHHCe2WdiZAqYCN8JpxpHKY">
-<div class="">
-<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-</div>
-</div>
-<div class="dragArea">
-<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="Full name">
-<input type="text" name="Full name" placeholder="Full name" data-form-field="Full name" required="required" class="form-control display-7" value="" id="Full name-mbr-popup-at">
-</div>
-<div class="col form-group " data-for="email">
-<input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control display-7" value="" id="email-mbr-popup-at">
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 input-group-btn"><button type="submit" class="btn btn-info display-4">Send me the FREE Business plan builder</button></div>
-</div>
-</form><!--Formbuilder Form-->
-</div>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-
-<div class="modal mbr-popup cid-st2zRPS1DW fade" tabindex="-1" role="dialog" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-bi" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header pb-0">
-                    <h5 class="modal-title mbr-fonts-style display-5"><strong>Refer &amp; Claim</strong></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
-                            <path d="M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <p class="mbr-text mbr-fonts-style display-4">Get a Fortnum &amp; Mason £30 gift hamper when you refer a business. The business you refer gets 3 months FREE Xero accounting software subscription!</p>
-
-                    <div>
-                        
-                            
-
-                            <div class="form-wrapper" data-form-type="formoid">
-<!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Refer &amp; Claim"><input type="hidden" name="email" data-form-email="true" value="wUMtS0f9Pl/OnThenbBlKu9QPZxksrrMbPLna6Sfv4HfMDbXOkm4dl8Ym5LAPEhnn5gesaAnAbt9U4R2ZAjfEMu50O0Ixk3eivTqwFXLE3eL8eplvv8XJGUdgafR8fGX.2CcPYuIqhA24mnApolUYWwuatY1kkQyUjtNGHceClR/2XXHJgeHtASijiLHC/vWdr6ewR/tDqvarE89sietBfZI+q2BqxXmDJC3lfp8JIR4XnBFr1Iemhh6NxOoafKZq">
-<div class="">
-<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-</div>
-</div>
-<div class="dragArea">
-<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="Full name">
-<input type="text" name="Full name" placeholder="Full name" data-form-field="Full name" required="required" class="form-control display-7" value="" id="Full name-mbr-popup-bi">
-</div>
-<div class="col form-group " data-for="email">
-<input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control display-7" value="" id="email-mbr-popup-bi">
-</div>
-<div data-for="Referred business" class="col-lg-12 col-md-12 col-sm-12 form-group">
-<input type="text" name="Referred business" placeholder="Business I would like to refer" data-form-field="Referred business" class="form-control display-7" required="required" value="" id="Referred business-mbr-popup-bi">
-</div>
-<div data-for="Business contact" class="col-lg-12 col-md-12 col-sm-12 form-group">
-<input type="text" name="Business contact" placeholder="Person to contact" data-form-field="Business contact" class="form-control display-7" required="required" value="" id="Business contact-mbr-popup-bi">
-</div>
-<div data-for="Their email address" class="col-lg-12 col-md-12 col-sm-12 form-group">
-<input type="text" name="Their email address" placeholder="Their email address" data-form-field="Their email address" class="form-control display-7" required="required" value="" id="Their email address-mbr-popup-bi">
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 input-group-btn">
-<button type="submit" class="btn btn-info display-4">Submit my Refer &amp; Claim offer</button>
-</div>
-</div>
-</form><!--Formbuilder Form-->
-</div>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-
-
-<script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/smart-cart/minicart.js"></script>
-  <script src="assets/smart-cart/minicart-customizer.js"></script>
-  <script src="assets/playervimeo/vimeo_player.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
-  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
-  <script src="assets/formstyler/jquery.formstyler.min.js"></script>
-  <script src="assets/datepicker/jquery.datetimepicker.full.js"></script>
-  <script src="assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/popup-plugin/script.js"></script>
-  <script src="assets/popup-overlay-plugin/script.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid.min.js"></script>
-  
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/60a67a33b1d5182476badbf5/1f654qmtk';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+  // Form handlers
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('[type=submit]');
+    btn.textContent = 'Message Sent!';
+    btn.style.background = 'var(--success)';
+    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; e.target.reset(); }, 3000);
+  }
+  function handleModalSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('[type=submit]');
+    btn.textContent = 'Booked! We\'ll be in touch.';
+    btn.style.background = 'var(--success)';
+    setTimeout(() => { closeModal('consultModal'); e.target.reset(); btn.textContent = 'Book Free Consultation'; btn.style.background = ''; }, 2500);
+  }
 </script>
-<!--End of Tawk.to Script-->
-  
-
 </body>
 </html>
